@@ -1,0 +1,5 @@
+SBS_ECAL_trigger/solution1/.autopilot/
+*.o
+*.d
+*.profraw
+SBS_ECAL_trigger/solution1/.debug

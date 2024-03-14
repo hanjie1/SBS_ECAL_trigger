@@ -46,17 +46,19 @@ typedef struct
   ap_uint<4>  nhits;
 } smodule_t;
 
-// trigger_t: trigger information
-// t - leading smodule time 
-// ns - leading smodule number
-// nb - block number of the leading hit
 typedef struct
 {
-  smodule_t sm[3];
-  ap_uint<3> t;
-  ap_uint<4> ns;
-  ap_uint<4> nb;
+  smodule_t smo[3][9];
+}all_smodule_t;
+
+// trigger_t:
+// - code works with 32ns of data at a time. hits & trigger have 4ns resolution, so 8 trigger decisions per iteration are computed.
+// - trig: [0]=>0ns, [1]=>4ns, [2]=>8ns, ..., [7]=28ns, when bit=0 no trigger, when bit=1 trigger
+typedef struct
+{
+  ap_uint<8> trig;
 } trigger_t;
+
 
 // hit_dt,   time difference between different PMTs within a super module
 // smo_dt,
@@ -69,6 +71,7 @@ void ecal_cosmic_hls(
     ap_uint<2> nsmo_threshold,       // how many super module is required to be fired
     ap_uint<4> mltp_threshold[3],    // how many PMTs are required to be fired per super module
     hls::stream<fadc_hits_vxs> &s_fadc_hits_vxs,
+    hls::stream<all_smodule_t> &s_all_smodule_t,
     hls::stream<trigger_t> &s_trigger_t
 );
 
@@ -77,7 +80,10 @@ typedef struct{
    ap_uint<4> nb;
 }block_coords;
 
-ap_uint<1> hit_coin_t(ap_uint<4> t1, ap_uint<4> t2, ap_uint<3> dt);
+trigger_t GenTrigger(ap_uint<8> smo_trigger_t[3], ap_uint<3> smo_dt, ap_uint<2> nsmo_threshold);
+ap_uint<8> smoGenTrigger(smodule_t one_smo[9]);
+smodule_t Find_Hits(ap_uint<4> nblock, hit_t pre_fadc_hits[9], hit_t cur_fadc_hits[9], hit_t aft_fadc_hits[9], ap_uint<3> hit_dt, ap_uint<4> mltp_threshold);
+ap_uint<2> hit_coin_t(ap_uint<4> t1, ap_uint<4> t2, ap_uint<3> dt);
 
 
 
