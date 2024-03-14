@@ -40,13 +40,17 @@ void ecal_cosmic_hls(
      hit_t pre_smo_hits[9];
      hit_t pre_pre_smo_hits[9];
 
+cout<<"---------- smo "<<ii<<" -------------"<<endl;
      for(jj=0; jj<9; jj++){
          ap_uint<5> ch=smodule_ch[ii][jj];
          smo_hits[jj] = fadc_hits.vxs_ch[ch];
          pre_smo_hits[jj] = pre_fadc_hits[ch];
          pre_pre_smo_hits[jj] = pre_pre_fadc_hits[ch];
+cout<<jj<<"  "<<smo_hits[jj].e<<endl;
      }
+
      for(jj=0; jj<9; jj++){
+cout<<"---------- block "<<jj<<" -------------"<<endl;
          all_smo.smo[ii][jj] = Find_Hits(jj, pre_pre_smo_hits, pre_smo_hits, smo_hits, hit_dt, mltp_threshold[ii]);
      } 
 
@@ -131,6 +135,8 @@ smodule_t Find_Hits(ap_uint<4> nblock, hit_t pre_fadc_hits[9], hit_t cur_fadc_hi
    smo_final.t=0;
    smo_final.nhits=0;
 
+   if(cur_fadc_hits[nblock].e==0) return smo_final;
+
    ap_uint<4> t_min = cur_fadc_hits[nblock].t;
    ap_uint<1> tmp_nhits[9]={0,0,0,0,0,0,0,0,0};
 
@@ -139,6 +145,8 @@ smodule_t Find_Hits(ap_uint<4> nblock, hit_t pre_fadc_hits[9], hit_t cur_fadc_hi
    ap_uint<4> jj=0;
    for(jj=0; jj<9; jj++){
        ap_uint<2> status=0;
+cout<<"111:  "<<cur_fadc_hits[jj].e<<"  "<<pre_fadc_hits[jj].e<<"  "<<aft_fadc_hits[jj].e<<endl;
+cout<<"222:  "<<cur_fadc_hits[jj].t<<"  "<<pre_fadc_hits[jj].t<<"  "<<aft_fadc_hits[jj].t<<endl;
        if(cur_fadc_hits[jj].e>0)
           status = hit_coin_t(t_min, cur_fadc_hits[jj].t, hit_dt); 
        else if(pre_fadc_hits[jj].e>0)
@@ -150,6 +158,7 @@ smodule_t Find_Hits(ap_uint<4> nblock, hit_t pre_fadc_hits[9], hit_t cur_fadc_hi
           case 1: tmp_nhits[jj]=1;break;
           case 2: bad=1; break;
        }
+cout<<nblock<<"  "<<jj<<"  "<<status<<"  "<<t_min<<"  "<<tmp_nhits[jj]<<endl;
    }
 
    ap_uint<4> all_nhits=0;

@@ -16,14 +16,14 @@ int main(int argc, char *argv[])
   hls::stream<all_smodule_t> s_all_smodule_t;
   hls::stream<trigger_t> s_trigger_t;
 
-  int nframe=29;
+  int nframe=3;
   int ii=0;
   for(ii=0; ii<nframe; ii++){
 
       fadc_hits_vxs new_hits_vxs;
 
       char filename[200];
-      snprintf(filename, 200, "%s%d.txt","/daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/data/frame",ii);
+      snprintf(filename, 200, "%s%d.txt","/daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/data2/frame",ii);
       ifstream infile(filename);
       if(infile.is_open())
         printf("open file: %s\n",filename);
@@ -49,7 +49,7 @@ int main(int argc, char *argv[])
   int nn=0;
   while(!s_fadc_hits_vxs.empty())
   {
-    cout<<"frame  "<<nn<<endl;
+    cout<<"=============================== frame "<<nn<<endl;
     ecal_cosmic_hls(
      hit_dt,
      smo_dt,
@@ -74,7 +74,7 @@ int main(int argc, char *argv[])
               int tmpt = tmpsmo.t.to_uint()*4+(nn-1)*8*4;
               int tmpnhits = tmpsmo.nhits.to_uint();
   
-              printf("Find smodule hit at frame %d: n=%d, t=%d, nhits=%d\n",nn-1,tmpn,tmpt,tmpnhits);
+              printf("Find smodule hit at frame %d: nsmo=%d, n=%d, t=%d, nhits=%d\n",nn-1,ii,tmpn,tmpt,tmpnhits);
            }
        }
      }

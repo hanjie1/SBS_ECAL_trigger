@@ -3,6 +3,8 @@
   <errorLogs>
     <logs>
       <csimLog>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="SBS_ECAL_trigger" solutionName="solution1" date="2024-03-14T15:57:41.909-0400"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="SBS_ECAL_trigger" solutionName="solution1" date="2024-03-14T14:58:24.523-0400"/>
         <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="SBS_ECAL_trigger" solutionName="solution1" date="2024-03-14T11:46:56.503-0400"/>
         <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="SBS_ECAL_trigger" solutionName="solution1" date="2024-03-14T11:44:41.739-0400"/>
         <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="SBS_ECAL_trigger" solutionName="solution1" date="2024-03-14T10:34:31.069-0400"/>
