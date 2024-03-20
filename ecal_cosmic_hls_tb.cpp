@@ -13,8 +13,8 @@ int main(int argc, char *argv[])
   ap_uint<2> nsmo_threshold = 1;
   ap_uint<4> mltp_threshold[3] = {1,1,1};
   hls::stream<fadc_hits_vxs> s_fadc_hits_vxs;
-  hls::stream<all_smodule_t> s_all_smodule_t;
-  hls::stream<trigger_t> s_trigger_t;
+  hls::stream<uint16_t> s_smo_trig_t[3],
+  hls::stream<uint8_t> s_trigger_t
 
   int nframe=3;
   int ii=0;
@@ -56,7 +56,7 @@ int main(int argc, char *argv[])
      nsmo_threshold,       // how many super module is required to be fired
      mltp_threshold,    // how many PMTs are required to be fired per super module
      s_fadc_hits_vxs,
-     s_all_smodule_t,
+     s_smo_trig_t,
      s_trigger_t
     );
 
@@ -64,20 +64,11 @@ int main(int argc, char *argv[])
   }
 
   nn=0;
-  while(!s_all_smodule_t.empty()){
-     all_smodule_t tmp = s_all_smodule_t.read();
+  while(!s_smo_trig_t[0].empty()){
      for(int ii=0; ii<3; ii++){
-       for(int jj=0; jj<9; jj++){
-           smodule_t tmpsmo = tmp.smo[ii][jj];
-           if(tmpsmo.nhits>0){
-              int tmpn = tmpsmo.n.to_uint();
-              int tmpt = tmpsmo.t.to_uint()*4+(nn-1)*8*4;
-              int tmpnhits = tmpsmo.nhits.to_uint();
-  
-              printf("Find smodule hit at frame %d: nsmo=%d, n=%d, t=%d, nhits=%d\n",nn-1,ii,tmpn,tmpt,tmpnhits);
-           }
+       ap_uint<16> tmp = s_smo_trig_t[ii].read();
+       printf("Find smodule hit at frame %d: nsmo=%d, t=%16x\n",nn-1,ii,tmp.to_uint());
        }
-     }
      nn++;
   }
 
