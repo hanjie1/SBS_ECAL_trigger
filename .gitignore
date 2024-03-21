@@ -4,3 +4,10 @@ SBS_ECAL_trigger/solution1/.autopilot/
 *.profraw
 SBS_ECAL_trigger/solution1/.debug
 *.log
+SBS_ECAL_trigger/.cproject
+SBS_ECAL_trigger/.project
+SBS_ECAL_trigger/.settings/SBS_ECAL_trigger.Debug.launch
+SBS_ECAL_trigger/.settings/SBS_ECAL_trigger.Release.launch
+SBS_ECAL_trigger/.settings/language.settings.xml
+SBS_ECAL_trigger/.vitis_hls_log_all.xml
+
