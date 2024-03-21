@@ -2,29 +2,35 @@
 #define ecal_cosmic_h
 
 #include <ap_int.h>
-#include <stdint.h>
 #include <hls_stream.h>
 
 #define NCHAN 27
 
-// single channel hit samples (time-over-threshold from FADC)
-// 8 samples: '1'=hit/'0'=no-hit, 4ns each
-// hit[0] @ 0ns, hit[1] @ 4ns, ... hit[7] @ 28ns
+// hit_t:
+// - every 32ns each fadc channel reports 13 bit energy, and 3 bit hit time (time offset in current 32ns clock: 0=0ns, 1=4ns, 2=8ns, ..., 7=28ns)
+// - if the channel has no hit, then the energy, e, will be reported as 0
+// - energy, e, will saturate at 8191 (e.g. if the FADC integral (after pedestal subtraction and gain) is greater than 8191, the FADC report 8191
 typedef struct
 {
-  ap_uint<8> hit;
-} fadc_hit_t;
+  ap_uint<13> e;
+  ap_uint<3> t;
+} hit_t;
 
-// fadc hits for whole VXS crate (16 slots, 16 channels each)
-// updated every 32ns
-// hits[0]   ... hits[15] : fadc slot 3  ch[0] ... ch[15]
-//    hits are in order of FADC slot/ch
-//    fadc slots are 3 to 10, 13 to 20
-//    note: slots 11 and 12 are VXS switch slots (FADCs aren't populated there)
+// fadc_hits_vxs:
+// - contains 256 VXS channels worth + 32 fiber of hit_t reported each 32ns
+// - vxs_ch[  0] to vxs_ch[ 15]: VME slot 3, ch 0 to 15 FADC channels
+//   vxs_ch[ 16] to vxs_ch[ 31]: VME slot 4, ch 0 to 15 FADC channels
+//   ...
+//   vxs_ch[112] to vxs_ch[127]: VME slot 10, ch 0 to 15 FADC channels
+//   (VXS switch A & B are at VME slot positions 11,12, so the FADC never can be installed here)
+//   vxs_ch[128] to vxs_ch[143]: VME slot 13, ch 0 to 15 FADC channels
+//   vxs_ch[144] to vxs_ch[159]: VME slot 14, ch 0 to 15 FADC channels
+//   ...
+//   vxs_ch[240] to vxs_ch[255]: VME slot 20, ch 0 to 15 FADC channels
 typedef struct
 {
-  fadc_hit_t hits[NCHAN];
-} fadc_vxs_hits_t;
+  hit_t vxs_ch[NCHAN];
+} fadc_hits_vxs;
 
 typedef struct
 {
@@ -41,7 +47,7 @@ void ecal_cosmic_hls(
     ap_uint<3> smo_dt,
     ap_uint<2> nsmo_threshold,       // how many super module is required to be fired
     ap_uint<4> mltp_threshold[3],    // how many PMTs are required to be fired per super module
-    hls::stream<fadc_vxs_hits_t> &s_fadc_vxs_hits,
+    hls::stream<fadc_hits_vxs> &s_fadc_hits_vxs,
     hls::stream<smo_trig_t> (&s_smo_trig_t)[3],
     hls::stream<trigger_t> &s_trigger_t
 );

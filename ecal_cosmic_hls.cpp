@@ -9,7 +9,7 @@ void ecal_cosmic_hls(
     ap_uint<3> smo_dt,
     ap_uint<2> nsmo_threshold,       // how many super module is required to be fired
     ap_uint<4> mltp_threshold[3],    // how many PMTs are required to be fired per super module
-    hls::stream<fadc_vxs_hits_t> &s_fadc_vxs_hits,
+    hls::stream<fadc_hits_vxs> &s_fadc_hits_vxs,
     hls::stream<smo_trig_t> (&s_smo_trig_t)[3],
     hls::stream<trigger_t> &s_trigger_t
 
@@ -24,21 +24,24 @@ void ecal_cosmic_hls(
 
 #pragma HLS PIPELINE II=1 style=flp
 
-  fadc_vxs_hits_t fadc_hits = s_fadc_vxs_hits.read();
-  static ap_uint<16> fadc_hits_stream[NCHAN];
- 
+  hits_t fadc_hits = s_fadc_hits_vxs.read();
+  static ap_uint<16> fadc_hits_stream[NCHAN]={0};
+
+// for a single channel,if there is a hit, register the hit in fadc_hits_stream[ch][t]=1,
+// and extend the hit time from the leading edge t to t+dt
+// the follwoing hits within [t,t+dt] are ignored 
   for(int ch=0; ch<NCHAN; ch++){
-    for(int t=0; t<8; t++){
-      if(fadc_hits.hits[ch].hit[t] && !fadc_hits_stream[ch][t]){
-        for(int ii=t; ii<=(t+hit_dt); ii++)
-            fadc_hits_stream[ch][ii]=1;
-      }
-    }
+     for(int ii=0; ii<8; ii++){ 
+         int tt = fadc_hits.vxs_ch[ch].t;
+         if(fadc_hits.vxs_ch[ch].e>0 && ii<=hit_dt && !fadc_hits_stream[ch][tt+ii]){
+            fadc_hits_stream[ch][tt+ii]=1;
+         }
+     }
   }
 
-  ap_uint<8> smo_trig[3];
-  
+
 // trigger candidate from each super module for the current frame
+  ap_uint<8> smo_trig[3];
  
   for(int t=0; t<8; t++){
       ap_uint<NCHAN> tmp_fadc_hits=0;
@@ -52,14 +55,12 @@ void ecal_cosmic_hls(
       smo_trig[2][t] = smo_multi_trig(tmp_fadc_hits(26,18),mltp_threshold[2]);
   } 
 
-// combine the current frame and the previous frame
-
+// extend the smo_trig from t to t+smo_dt, if there is an existing trigger, then ignore
   static smo_trig_t smo_trig_stream[3];
 
   for(int ii=0; ii<3; ii++){
       smo_trig_stream[ii].trig = newsmo_trig(smo_trig_stream[ii].trig, smo_trig[ii], smo_dt);
   }
-
 
   ap_uint<8> trigger = gen_trig(smo_trig_stream, nsmo_threshold);
   trigger_t final_trig;
@@ -97,20 +98,13 @@ ap_uint<16> newsmo_trig( ap_uint<16> trig_stream, ap_uint<8> trig_cur, ap_uint<3
 
   ap_uint<1> first=1;
   ap_uint<16> newtrig = trig_stream;
-  for(int t=0; t<8; t++){
 
-      if(newtrig[t]) continue;
-
-      if(trig_cur[t] && first){
-         first=0;
-         for(int ii=t; ii<=(t+smo_dt); ii++)
-             newtrig[ii]=1;
-         t = t+smo_dt+1; 
-      }
-      else{
-          if(trig_cur[t]==0)
-             first=1;
-      }
+  for(int ii=0; ii<8; ii++){
+     for(int jj=0; jj<8; jj++){
+         if( trig_cur[ii] && !newtrig[ii+jj] && jj<=smo_dt){
+             newtrig[ii+jj]=1;
+         } 
+     }
   }
 
   return newtrig;

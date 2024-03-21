@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
   ap_uint<3> smo_dt = 2;
   ap_uint<2> nsmo_threshold = 2;
   ap_uint<4> mltp_threshold[3] = {3,3,3};
-  hls::stream<fadc_vxs_hits_t> s_fadc_hits_vxs;
+  hls::stream<fadc_hits_vxs> s_fadc_hits_vxs;
   hls::stream<smo_trig_t> s_smo_trig_t[3];
   hls::stream<trigger_t> s_trigger_t;
 
@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
   int ii=0;
   for(ii=0; ii<nframe; ii++){
 
-      fadc_vxs_hits_t new_hits_vxs;
+      fadc_hits_vxs new_hits_vxs;
 
       char filename[200];
       snprintf(filename, 200, "%s%d.txt","/daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/data2/frame",ii);
@@ -33,9 +33,11 @@ int main(int argc, char *argv[])
       int nn=0;
       while( !infile.eof() && nn<NCHAN) 
       {
-         int tt;
+         int ee,tt;
+         infile>>ee;
          infile>>tt;
-         new_hits_vxs.hits[nn].hit = (ap_uint<8>)tt;
+         new_hits_vxs.vxs_ch[nn].e = (ap_uint<13>)ee;
+         new_hits_vxs.vxs_ch[nn].t = (ap_uint<3>)tt;
          nn++;
       }
       printf("%d %d\n",ii,nn);
