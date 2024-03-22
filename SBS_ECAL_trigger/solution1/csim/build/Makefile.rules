@@ -1,11 +1,11 @@
-# Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-# Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+#===- Makefile.sysc.rules ----------------------------------*- Makefile -*--===#
+#
+# Makefile rules for autopilot SystemC simulation flow
+#
+# __VIVADO_HLS_COPYRIGHT-INFO__
+#
+#===------------------------------------------------------------------------===#
 
-#===------------------------------------------------------------------------===#
-#
-# Makefile rules for Vitis HLS simulation flow
-#
-#===------------------------------------------------------------------------===#
 
 # Required user variables:
 #TARGET
@@ -88,6 +88,11 @@ CC	= gcc
 CXX	= g++
 LLC     = $(AUTOPILOT_TOOL)/clang-3.9-csynth/bin/llc
 endif
+endif
+
+ifdef __USE_CLANG_M32__
+CC      += -m32
+CXX     += -m32
 endif
 
 LINUX	=

@@ -37,11 +37,6 @@
 			<location>/daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/SBS_ECAL_trigger/.apc/.tb</location>
 		</link>
 		<link>
-			<name>.reference/ecal_cosmic_hls.h</name>
-			<type>1</type>
-			<location>/daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/ecal_cosmic_hls.h</location>
-		</link>
-		<link>
 			<name>solution1/constraints</name>
 			<type>2</type>
 			<location>/daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/SBS_ECAL_trigger/solution1/.tcls</location>

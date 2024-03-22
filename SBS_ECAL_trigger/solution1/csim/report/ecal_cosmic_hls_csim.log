@@ -1,35 +1,289 @@
 INFO: [SIM 2] *************** CSIM start ***************
-INFO: [SIM 4] CSIM will launch CLANG as the compiler.
-   Compiling ../../../../ecal_cosmic_hls_tb.cpp in debug mode
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
    Compiling ../../../../ecal_cosmic_hls.cpp in debug mode
    Generating csim.exe
-open file: /daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/data2/frame0.txt
+open file: /daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/data1/frame0.txt
 0 27
-open file: /daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/data2/frame1.txt
+open file: /daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/data1/frame1.txt
 1 27
-open file: /daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/data2/frame2.txt
+open file: /daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/data1/frame2.txt
 2 27
-open file: /daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/data2/frame3.txt
+open file: /daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/data1/frame3.txt
 3 27
+open file: /daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/data1/frame4.txt
+4 27
+open file: /daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/data1/frame5.txt
+5 27
+open file: /daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/data1/frame6.txt
+6 27
+open file: /daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/data1/frame7.txt
+7 27
+open file: /daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/data1/frame8.txt
+8 27
+open file: /daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/data1/frame9.txt
+9 27
+open file: /daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/data1/frame10.txt
+10 27
+open file: /daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/data1/frame11.txt
+11 27
+open file: /daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/data1/frame12.txt
+12 27
+open file: /daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/data1/frame13.txt
+13 27
+open file: /daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/data1/frame14.txt
+14 27
+open file: /daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/data1/frame15.txt
+15 27
+open file: /daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/data1/frame16.txt
+16 27
+open file: /daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/data1/frame17.txt
+17 27
+open file: /daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/data1/frame18.txt
+18 27
+open file: /daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/data1/frame19.txt
+19 27
+open file: /daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/data1/frame20.txt
+20 27
+open file: /daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/data1/frame21.txt
+21 27
+open file: /daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/data1/frame22.txt
+22 27
+open file: /daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/data1/frame23.txt
+23 27
+open file: /daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/data1/frame24.txt
+24 27
+open file: /daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/data1/frame25.txt
+25 27
+open file: /daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/data1/frame26.txt
+26 27
+open file: /daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/data1/frame27.txt
+27 27
+open file: /daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/data1/frame28.txt
+28 27
 =============================== frame 0
 =============================== frame 1
 =============================== frame 2
 =============================== frame 3
-Find smodule hit at frame 0: nsmo=0, t=             1c0
-Find smodule hit at frame 0: nsmo=1, t=             380
+=============================== frame 4
+=============================== frame 5
+=============================== frame 6
+=============================== frame 7
+=============================== frame 8
+=============================== frame 9
+=============================== frame 10
+=============================== frame 11
+=============================== frame 12
+=============================== frame 13
+=============================== frame 14
+=============================== frame 15
+=============================== frame 16
+=============================== frame 17
+=============================== frame 18
+=============================== frame 19
+=============================== frame 20
+=============================== frame 21
+=============================== frame 22
+=============================== frame 23
+=============================== frame 24
+=============================== frame 25
+=============================== frame 26
+=============================== frame 27
+=============================== frame 28
+Find smodule hit at frame 0: nsmo=0, t=               0
+Find smodule hit at frame 0: nsmo=1, t=               0
 Find smodule hit at frame 0: nsmo=2, t=               0
-Find smodule hit at frame 1: nsmo=0, t=               1
-Find smodule hit at frame 1: nsmo=1, t=              73
-Find smodule hit at frame 1: nsmo=2, t=               7
-Find smodule hit at frame 2: nsmo=0, t=              38
+Find smodule hit at frame 1: nsmo=0, t=             1e0
+Find smodule hit at frame 1: nsmo=1, t=               0
+Find smodule hit at frame 1: nsmo=2, t=               0
+Find smodule hit at frame 2: nsmo=0, t=             1e1
 Find smodule hit at frame 2: nsmo=1, t=               0
 Find smodule hit at frame 2: nsmo=2, t=               0
-Find smodule hit at frame 3: nsmo=0, t=               0
+Find smodule hit at frame 3: nsmo=0, t=             1e1
 Find smodule hit at frame 3: nsmo=1, t=               0
 Find smodule hit at frame 3: nsmo=2, t=               0
-Trigger at frame 0: t=7
-Trigger at frame 1: t=0
-Trigger at frame 1: t=1
-INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 4
+Find smodule hit at frame 4: nsmo=0, t=             1e1
+Find smodule hit at frame 4: nsmo=1, t=               0
+Find smodule hit at frame 4: nsmo=2, t=               0
+Find smodule hit at frame 5: nsmo=0, t=             1e1
+Find smodule hit at frame 5: nsmo=1, t=               0
+Find smodule hit at frame 5: nsmo=2, t=               0
+Find smodule hit at frame 6: nsmo=0, t=             1e1
+Find smodule hit at frame 6: nsmo=1, t=               0
+Find smodule hit at frame 6: nsmo=2, t=               0
+Find smodule hit at frame 7: nsmo=0, t=             1e1
+Find smodule hit at frame 7: nsmo=1, t=               0
+Find smodule hit at frame 7: nsmo=2, t=               0
+Find smodule hit at frame 8: nsmo=0, t=             1e1
+Find smodule hit at frame 8: nsmo=1, t=               0
+Find smodule hit at frame 8: nsmo=2, t=               0
+Find smodule hit at frame 9: nsmo=0, t=             1e1
+Find smodule hit at frame 9: nsmo=1, t=               0
+Find smodule hit at frame 9: nsmo=2, t=               0
+Find smodule hit at frame 10: nsmo=0, t=               1
+Find smodule hit at frame 10: nsmo=1, t=             1e0
+Find smodule hit at frame 10: nsmo=2, t=               0
+Find smodule hit at frame 11: nsmo=0, t=               0
+Find smodule hit at frame 11: nsmo=1, t=             1e1
+Find smodule hit at frame 11: nsmo=2, t=               0
+Find smodule hit at frame 12: nsmo=0, t=               0
+Find smodule hit at frame 12: nsmo=1, t=             1e1
+Find smodule hit at frame 12: nsmo=2, t=               0
+Find smodule hit at frame 13: nsmo=0, t=               0
+Find smodule hit at frame 13: nsmo=1, t=             1e1
+Find smodule hit at frame 13: nsmo=2, t=               0
+Find smodule hit at frame 14: nsmo=0, t=               0
+Find smodule hit at frame 14: nsmo=1, t=             1e1
+Find smodule hit at frame 14: nsmo=2, t=               0
+Find smodule hit at frame 15: nsmo=0, t=               0
+Find smodule hit at frame 15: nsmo=1, t=             1e1
+Find smodule hit at frame 15: nsmo=2, t=               0
+Find smodule hit at frame 16: nsmo=0, t=               0
+Find smodule hit at frame 16: nsmo=1, t=             1e1
+Find smodule hit at frame 16: nsmo=2, t=               0
+Find smodule hit at frame 17: nsmo=0, t=               0
+Find smodule hit at frame 17: nsmo=1, t=             1e1
+Find smodule hit at frame 17: nsmo=2, t=               0
+Find smodule hit at frame 18: nsmo=0, t=               0
+Find smodule hit at frame 18: nsmo=1, t=             1e1
+Find smodule hit at frame 18: nsmo=2, t=               0
+Find smodule hit at frame 19: nsmo=0, t=               0
+Find smodule hit at frame 19: nsmo=1, t=               1
+Find smodule hit at frame 19: nsmo=2, t=             1e0
+Find smodule hit at frame 20: nsmo=0, t=               0
+Find smodule hit at frame 20: nsmo=1, t=               0
+Find smodule hit at frame 20: nsmo=2, t=             1e1
+Find smodule hit at frame 21: nsmo=0, t=               0
+Find smodule hit at frame 21: nsmo=1, t=               0
+Find smodule hit at frame 21: nsmo=2, t=             1e1
+Find smodule hit at frame 22: nsmo=0, t=               0
+Find smodule hit at frame 22: nsmo=1, t=               0
+Find smodule hit at frame 22: nsmo=2, t=             1e1
+Find smodule hit at frame 23: nsmo=0, t=               0
+Find smodule hit at frame 23: nsmo=1, t=               0
+Find smodule hit at frame 23: nsmo=2, t=             1e1
+Find smodule hit at frame 24: nsmo=0, t=               0
+Find smodule hit at frame 24: nsmo=1, t=               0
+Find smodule hit at frame 24: nsmo=2, t=             1e1
+Find smodule hit at frame 25: nsmo=0, t=               0
+Find smodule hit at frame 25: nsmo=1, t=               0
+Find smodule hit at frame 25: nsmo=2, t=             1e1
+Find smodule hit at frame 26: nsmo=0, t=               0
+Find smodule hit at frame 26: nsmo=1, t=               0
+Find smodule hit at frame 26: nsmo=2, t=             1e1
+Find smodule hit at frame 27: nsmo=0, t=               0
+Find smodule hit at frame 27: nsmo=1, t=               0
+Find smodule hit at frame 27: nsmo=2, t=             1e1
+Find smodule hit at frame 28: nsmo=0, t=               0
+Find smodule hit at frame 28: nsmo=1, t=               0
+Find smodule hit at frame 28: nsmo=2, t=               1
+Trigger at frame 1: t=5
+Trigger at frame 1: t=6
+Trigger at frame 1: t=7
+Trigger at frame 2: t=0
+Trigger at frame 2: t=5
+Trigger at frame 2: t=6
+Trigger at frame 2: t=7
+Trigger at frame 3: t=0
+Trigger at frame 3: t=5
+Trigger at frame 3: t=6
+Trigger at frame 3: t=7
+Trigger at frame 4: t=0
+Trigger at frame 4: t=5
+Trigger at frame 4: t=6
+Trigger at frame 4: t=7
+Trigger at frame 5: t=0
+Trigger at frame 5: t=5
+Trigger at frame 5: t=6
+Trigger at frame 5: t=7
+Trigger at frame 6: t=0
+Trigger at frame 6: t=5
+Trigger at frame 6: t=6
+Trigger at frame 6: t=7
+Trigger at frame 7: t=0
+Trigger at frame 7: t=5
+Trigger at frame 7: t=6
+Trigger at frame 7: t=7
+Trigger at frame 8: t=0
+Trigger at frame 8: t=5
+Trigger at frame 8: t=6
+Trigger at frame 8: t=7
+Trigger at frame 9: t=0
+Trigger at frame 9: t=5
+Trigger at frame 9: t=6
+Trigger at frame 9: t=7
+Trigger at frame 10: t=0
+Trigger at frame 10: t=5
+Trigger at frame 10: t=6
+Trigger at frame 10: t=7
+Trigger at frame 11: t=0
+Trigger at frame 11: t=5
+Trigger at frame 11: t=6
+Trigger at frame 11: t=7
+Trigger at frame 12: t=0
+Trigger at frame 12: t=5
+Trigger at frame 12: t=6
+Trigger at frame 12: t=7
+Trigger at frame 13: t=0
+Trigger at frame 13: t=5
+Trigger at frame 13: t=6
+Trigger at frame 13: t=7
+Trigger at frame 14: t=0
+Trigger at frame 14: t=5
+Trigger at frame 14: t=6
+Trigger at frame 14: t=7
+Trigger at frame 15: t=0
+Trigger at frame 15: t=5
+Trigger at frame 15: t=6
+Trigger at frame 15: t=7
+Trigger at frame 16: t=0
+Trigger at frame 16: t=5
+Trigger at frame 16: t=6
+Trigger at frame 16: t=7
+Trigger at frame 17: t=0
+Trigger at frame 17: t=5
+Trigger at frame 17: t=6
+Trigger at frame 17: t=7
+Trigger at frame 18: t=0
+Trigger at frame 18: t=5
+Trigger at frame 18: t=6
+Trigger at frame 18: t=7
+Trigger at frame 19: t=0
+Trigger at frame 19: t=5
+Trigger at frame 19: t=6
+Trigger at frame 19: t=7
+Trigger at frame 20: t=0
+Trigger at frame 20: t=5
+Trigger at frame 20: t=6
+Trigger at frame 20: t=7
+Trigger at frame 21: t=0
+Trigger at frame 21: t=5
+Trigger at frame 21: t=6
+Trigger at frame 21: t=7
+Trigger at frame 22: t=0
+Trigger at frame 22: t=5
+Trigger at frame 22: t=6
+Trigger at frame 22: t=7
+Trigger at frame 23: t=0
+Trigger at frame 23: t=5
+Trigger at frame 23: t=6
+Trigger at frame 23: t=7
+Trigger at frame 24: t=0
+Trigger at frame 24: t=5
+Trigger at frame 24: t=6
+Trigger at frame 24: t=7
+Trigger at frame 25: t=0
+Trigger at frame 25: t=5
+Trigger at frame 25: t=6
+Trigger at frame 25: t=7
+Trigger at frame 26: t=0
+Trigger at frame 26: t=5
+Trigger at frame 26: t=6
+Trigger at frame 26: t=7
+Trigger at frame 27: t=0
+Trigger at frame 27: t=5
+Trigger at frame 27: t=6
+Trigger at frame 27: t=7
+Trigger at frame 28: t=0
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 29
 INFO: [SIM 1] CSim done with 0 errors.
 INFO: [SIM 3] *************** CSIM finish ***************

@@ -8,22 +8,22 @@ using namespace std;
 int main(int argc, char *argv[])
 {
 
-  ap_uint<3> hit_dt = 2;
-  ap_uint<3> smo_dt = 2;
-  ap_uint<2> nsmo_threshold = 2;
-  ap_uint<4> mltp_threshold[3] = {3,3,3};
+  ap_uint<3> hit_dt = 3;
+  ap_uint<3> smo_dt = 3;
+  ap_uint<2> nsmo_threshold = 1;
+  ap_uint<4> mltp_threshold[3] = {1,1,1};
   hls::stream<fadc_hits_vxs> s_fadc_hits_vxs;
   hls::stream<smo_trig_t> s_smo_trig_t[3];
   hls::stream<trigger_t> s_trigger_t;
 
-  int nframe=4;
+  int nframe=29;
   int ii=0;
   for(ii=0; ii<nframe; ii++){
 
       fadc_hits_vxs new_hits_vxs;
 
       char filename[200];
-      snprintf(filename, 200, "%s%d.txt","/daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/data2/frame",ii);
+      snprintf(filename, 200, "%s%d.txt","/daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/data1/frame",ii);
       ifstream infile(filename);
       if(infile.is_open())
         printf("open file: %s\n",filename);

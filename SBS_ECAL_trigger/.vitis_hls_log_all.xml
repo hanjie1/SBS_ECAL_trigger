@@ -3,50 +3,15 @@
   <errorLogs>
     <logs>
       <synLog/>
-      <csimLog/>
     </logs>
   </errorLogs>
   <warningLogs>
     <logs>
       <synLog>
-        <logs message="WARNING: [RTGEN 206-101] Register 'fadc_hits_stream_1' is power-on initialization." projectName="SBS_ECAL_trigger" solutionName="solution1" date="2024-03-21T15:26:46.944-0400" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'fadc_hits_stream_2' is power-on initialization." projectName="SBS_ECAL_trigger" solutionName="solution1" date="2024-03-21T15:26:46.096-0400" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'fadc_hits_stream_3' is power-on initialization." projectName="SBS_ECAL_trigger" solutionName="solution1" date="2024-03-21T15:26:46.091-0400" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'fadc_hits_stream_4' is power-on initialization." projectName="SBS_ECAL_trigger" solutionName="solution1" date="2024-03-21T15:26:46.085-0400" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'fadc_hits_stream_5' is power-on initialization." projectName="SBS_ECAL_trigger" solutionName="solution1" date="2024-03-21T15:26:46.079-0400" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'fadc_hits_stream_6' is power-on initialization." projectName="SBS_ECAL_trigger" solutionName="solution1" date="2024-03-21T15:26:46.073-0400" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'fadc_hits_stream_7' is power-on initialization." projectName="SBS_ECAL_trigger" solutionName="solution1" date="2024-03-21T15:26:46.067-0400" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'fadc_hits_stream_8' is power-on initialization." projectName="SBS_ECAL_trigger" solutionName="solution1" date="2024-03-21T15:26:46.060-0400" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'fadc_hits_stream_9' is power-on initialization." projectName="SBS_ECAL_trigger" solutionName="solution1" date="2024-03-21T15:26:46.054-0400" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'fadc_hits_stream_10' is power-on initialization." projectName="SBS_ECAL_trigger" solutionName="solution1" date="2024-03-21T15:26:46.048-0400" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'fadc_hits_stream_11' is power-on initialization." projectName="SBS_ECAL_trigger" solutionName="solution1" date="2024-03-21T15:26:46.042-0400" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'fadc_hits_stream_12' is power-on initialization." projectName="SBS_ECAL_trigger" solutionName="solution1" date="2024-03-21T15:26:46.037-0400" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'fadc_hits_stream_13' is power-on initialization." projectName="SBS_ECAL_trigger" solutionName="solution1" date="2024-03-21T15:26:46.031-0400" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'fadc_hits_stream_14' is power-on initialization." projectName="SBS_ECAL_trigger" solutionName="solution1" date="2024-03-21T15:26:46.025-0400" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'fadc_hits_stream_15' is power-on initialization." projectName="SBS_ECAL_trigger" solutionName="solution1" date="2024-03-21T15:26:46.020-0400" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'fadc_hits_stream_16' is power-on initialization." projectName="SBS_ECAL_trigger" solutionName="solution1" date="2024-03-21T15:26:46.014-0400" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'fadc_hits_stream_17' is power-on initialization." projectName="SBS_ECAL_trigger" solutionName="solution1" date="2024-03-21T15:26:46.009-0400" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'fadc_hits_stream_18' is power-on initialization." projectName="SBS_ECAL_trigger" solutionName="solution1" date="2024-03-21T15:26:46.003-0400" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'fadc_hits_stream_19' is power-on initialization." projectName="SBS_ECAL_trigger" solutionName="solution1" date="2024-03-21T15:26:45.997-0400" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'fadc_hits_stream_20' is power-on initialization." projectName="SBS_ECAL_trigger" solutionName="solution1" date="2024-03-21T15:26:45.992-0400" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'fadc_hits_stream_21' is power-on initialization." projectName="SBS_ECAL_trigger" solutionName="solution1" date="2024-03-21T15:26:45.985-0400" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'fadc_hits_stream_22' is power-on initialization." projectName="SBS_ECAL_trigger" solutionName="solution1" date="2024-03-21T15:26:45.980-0400" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'fadc_hits_stream_23' is power-on initialization." projectName="SBS_ECAL_trigger" solutionName="solution1" date="2024-03-21T15:26:45.975-0400" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'fadc_hits_stream_24' is power-on initialization." projectName="SBS_ECAL_trigger" solutionName="solution1" date="2024-03-21T15:26:45.969-0400" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'fadc_hits_stream_25' is power-on initialization." projectName="SBS_ECAL_trigger" solutionName="solution1" date="2024-03-21T15:26:45.964-0400" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'fadc_hits_stream_26' is power-on initialization." projectName="SBS_ECAL_trigger" solutionName="solution1" date="2024-03-21T15:26:45.958-0400" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'smo_trig_stream_2' is power-on initialization." projectName="SBS_ECAL_trigger" solutionName="solution1" date="2024-03-21T15:26:45.953-0400" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'smo_trig_stream_1' is power-on initialization." projectName="SBS_ECAL_trigger" solutionName="solution1" date="2024-03-21T15:26:45.947-0400" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'smo_trig_stream_0' is power-on initialization." projectName="SBS_ECAL_trigger" solutionName="solution1" date="2024-03-21T15:26:45.941-0400" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Register 'fadc_hits_stream_0' is power-on initialization." projectName="SBS_ECAL_trigger" solutionName="solution1" date="2024-03-21T15:26:45.937-0400" type="Warning"/>
-        <logs message="WARNING: [SCHED 204-65] Unable to satisfy pipeline directive for function 'ecal_cosmic_hls': contains subloop(s) that are not unrolled." projectName="SBS_ECAL_trigger" solutionName="solution1" date="2024-03-21T15:26:40.100-0400" type="Warning"/>
-        <logs message="WARNING: [HLS 200-932] Cannot unroll loop 'VITIS_LOOP_106_2' (ecal_cosmic_hls.cpp:106) in function 'ecal_cosmic_hls' completely: variable loop bound." projectName="SBS_ECAL_trigger" solutionName="solution1" date="2024-03-21T15:26:25.219-0400" type="Warning"/>
-        <logs message="WARNING: [HLS 200-932] Cannot unroll loop 'VITIS_LOOP_100_1' (ecal_cosmic_hls.cpp:100) in function 'ecal_cosmic_hls' completely: variable loop bound." projectName="SBS_ECAL_trigger" solutionName="solution1" date="2024-03-21T15:26:24.838-0400" type="Warning"/>
-        <logs message="WARNING: [HLS 200-932] Cannot unroll loop 'VITIS_LOOP_106_2' (ecal_cosmic_hls.cpp:106) in function 'ecal_cosmic_hls' completely: variable loop bound." projectName="SBS_ECAL_trigger" solutionName="solution1" date="2024-03-21T15:26:24.833-0400" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'ecal_cosmic_hls_ap_uint_ap_uint_ap_uint_ap_uint_stream_stream_3_stream_s' is power-on initialization." projectName="SBS_ECAL_trigger" solutionName="solution1" date="2024-03-22T10:54:53.579-0400" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'ecal_cosmic_hls_ap_uint_ap_uint_ap_uint_ap_uint_stream_stream_3_stream_s_1' is power-on initialization." projectName="SBS_ECAL_trigger" solutionName="solution1" date="2024-03-22T10:54:52.743-0400" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'ecal_cosmic_hls_ap_uint_ap_uint_ap_uint_ap_uint_stream_stream_3_stream_s_2' is power-on initialization." projectName="SBS_ECAL_trigger" solutionName="solution1" date="2024-03-22T10:54:52.740-0400" type="Warning"/>
       </synLog>
-      <csimLog>
-        <logs message="WARNING: [HLS 200-484] The 'csim_design -profile' command is deprecated and will be removed in a future release." projectName="SBS_ECAL_trigger" solutionName="solution1" date="2024-03-21T15:28:57.737-0400" type="Warning"/>
-      </csimLog>
     </logs>
   </warningLogs>
 </vivadoHLSLog:LogRoot>

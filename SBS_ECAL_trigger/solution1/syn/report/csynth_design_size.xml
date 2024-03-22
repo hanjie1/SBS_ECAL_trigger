@@ -1,45 +1,27 @@
 <design_size title="Design Size Report">
-    <item name="Total Instructions per Compilation Phase">
-        <table>
-            <keys size="4">Phase, Step, Instructions, Description</keys>
-            <column name="Compile/Link">, 2058, After all functions are compiled and linked into a single design</column>
-            <column name="">, , </column>
-            <column name="Unroll/Inline">, , After user unroll and inline pragmas are applied</column>
-            <column name="">(1) unroll, 8557, user unroll pragmas are applied</column>
-            <column name="">(2) simplification, 7123, simplification of applied user unroll pragmas</column>
-            <column name="">(3) inline, 7129, user inline pragmas are applied</column>
-            <column name="">(4) simplification, 6894, simplification of applied user inline pragmas</column>
-            <column name="">, , </column>
-            <column name="Array/Struct">, , After user array partition and struct aggregate/disaggregate pragmas are applied</column>
-            <column name="">(1) array partition, 6898, user array partition pragmas are applied</column>
-            <column name="">(2) simplification, 6892, simplification of applied user array partition &amp; struct aggregate/disaggregate pragmas</column>
-            <column name="">(3) aggregate/disaggregate , 6896, user struct aggregate/disaggregate pragmas are applied</column>
-            <column name="">(4) array reshape, 7097, apply array reshape pragmas</column>
-            <column name="">(5) access patterns, 7318, array access pattern optmizations</column>
-            <column name="">, , </column>
-            <column name="Performance">, , After transformations are applied to meet performance pragma targets</column>
-            <column name="">(1) loop simplification, 6970, loop and instruction simplification</column>
-            <column name="">(2) parallelization, 6674, loops are unrolled or pipelined to meet performance targets</column>
-            <column name="">(3) array partition, 6674, arrays are partitioned to meet performance targets</column>
-            <column name="">(4) simplification, 6674, simplification of design after performance transformations</column>
-            <column name="">, , </column>
-            <column name="HW Transforms">, , After hardware transfomations</column>
-            <column name="">(1) lowering, 6675, initial conversion to HW specific instructions</column>
-            <column name="">(2) optimizations, 7501, high level synthesis optimizations</column>
-        </table>
-    </item>
     <item name="Instructions per Function for each Compilation Phase">
         <hiertable>
-            <header size="7" col0="Function" col1="Location" col2="Compile/Link" col3="Unroll/Inline" col4="Array/Struct" col5="Performance" col6="HW Transforms"/>
+            <header size="6" col0="Function" col1="Location" col2="Compile/Link" col3="Unroll/Inline" col4="Performance/Pipeline" col5="Optimizations"/>
             <rows>
-                <row id="0" col0="ecal_cosmic_hls" col1="ecal_cosmic_hls.cpp:7" col2="2058" col3="6894" col4="7318" col5="6674" col6="7501">
-                    <row id="4" col0="smo_multi_trig" col1="ecal_cosmic_hls.cpp:83" col2="420" col2_disp=" 420 (3 calls)" col3="1272" col3_disp="1,272 (24 calls)" col4="1272" col4_disp="1,272 (24 calls)" col5="" col6=""/>
-                    <row id="1" col0="newsmo_trig" col1="ecal_cosmic_hls.cpp:96" col2="556" col3="153" col3_disp=" 153 (3 calls)" col4="159" col4_disp=" 159 (3 calls)" col5="" col6=""/>
-                    <row id="2" col0="gen_trig" col1="ecal_cosmic_hls.cpp:119" col2="177" col3="148" col4="148" col5="" col6=""/>
+                <row id="0" col0="ecal_cosmic_hls" col1="ecal_cosmic_hls.cpp:7" col2="2186" col3="7562" col4="5716" col5="5722">
+                    <row id="2" col0="smo_multi_trig" col1="ecal_cosmic_hls.cpp:114" col2="420" col2_disp="  420 (3 calls)" col3="1776" col3_disp="1,776 (24 calls)" col4="" col5=""/>
+                    <row id="7" col0="disc" col1="ecal_cosmic_hls.cpp:94" col2="168" col3="306" col3_disp="  306 (3 calls)" col4="" col5=""/>
+                    <row id="5" col0="newsmo_trig" col1="ecal_cosmic_hls.cpp:127" col2="357" col3="1509" col3_disp="1,509 (3 calls)" col4="" col5=""/>
+                    <row id="3" col0="gen_trig" col1="ecal_cosmic_hls.cpp:146" col2="177" col3="154" col4="" col5=""/>
+                    <row id="8" col0="" col1="ecal_cosmic_hls.h:40" col2="10" col3="" col4="" col5=""/>
                 </row>
             </rows>
             <notes/>
         </hiertable>
+    </item>
+    <item name="Description of Compilation Phases">
+        <table>
+            <keys size="2">Compilation Phase, Description</keys>
+            <column name="Compile/Link">All functions are compiled and linked into a single design</column>
+            <column name="Unroll/Inline">After user unroll and inline pragmas are applied</column>
+            <column name="Performance/Pipeline">After performance and pipeline pragmas are applied</column>
+            <column name="Optimizations">After high level synthesis optimizations</column>
+        </table>
     </item>
     <item name="Design Size Message Settings">
         <table>

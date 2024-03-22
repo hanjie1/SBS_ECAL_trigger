@@ -16,7 +16,7 @@ void ecal_cosmic_hls(
 )
 {
 
-#pragma HLS INTERFACE ap_fifo port=s_fadc_vxs_hits
+#pragma HLS INTERFACE ap_fifo port=s_fadc_hits_vxs
 #pragma HLS INTERFACE ap_fifo port=s_smo_trig_t[0]
 #pragma HLS INTERFACE ap_fifo port=s_smo_trig_t[1]
 #pragma HLS INTERFACE ap_fifo port=s_smo_trig_t[2]
@@ -24,16 +24,18 @@ void ecal_cosmic_hls(
 
 #pragma HLS PIPELINE II=1 style=flp
 
-  hits_t fadc_hits = s_fadc_hits_vxs.read();
+  fadc_hits_vxs fadc_hits = s_fadc_hits_vxs.read();
   static ap_uint<16> fadc_hits_stream[NCHAN]={0};
+  if(smo_dt<hit_dt) smo_dt = hit_dt;
 
 // for a single channel,if there is a hit, register the hit in fadc_hits_stream[ch][t]=1,
 // and extend the hit time from the leading edge t to t+dt
 // the follwoing hits within [t,t+dt] are ignored 
   for(int ch=0; ch<NCHAN; ch++){
+     int tt = fadc_hits.vxs_ch[ch].t;
+     ap_uint<1> first = !fadc_hits_stream[ch][tt];   // check if there is already a hit at t
      for(int ii=0; ii<8; ii++){ 
-         int tt = fadc_hits.vxs_ch[ch].t;
-         if(fadc_hits.vxs_ch[ch].e>0 && ii<=hit_dt && !fadc_hits_stream[ch][tt+ii]){
+         if(fadc_hits.vxs_ch[ch].e>0 && ii<=hit_dt && first){
             fadc_hits_stream[ch][tt+ii]=1;
          }
      }
@@ -42,6 +44,9 @@ void ecal_cosmic_hls(
 
 // trigger candidate from each super module for the current frame
   ap_uint<8> smo_trig[3];
+#pragma HLS ARRAY_PARTITION variable=mltp_threshold dim=1 type=complete
+#pragma HLS ARRAY_PARTITION variable=smo_trig dim=2 type=complete
+
  
   for(int t=0; t<8; t++){
       ap_uint<NCHAN> tmp_fadc_hits=0;
@@ -55,8 +60,13 @@ void ecal_cosmic_hls(
       smo_trig[2][t] = smo_multi_trig(tmp_fadc_hits(26,18),mltp_threshold[2]);
   } 
 
+// pass smo_trig to a distriminator to only keep the leading time per trigger
+  for(int ii=0; ii<3; ii++){
+     smo_trig[ii] = disc(smo_trig[ii]);
+}
+
 // extend the smo_trig from t to t+smo_dt, if there is an existing trigger, then ignore
-  static smo_trig_t smo_trig_stream[3];
+  static smo_trig_t smo_trig_stream[3]={{0},{0},{0}};
 
   for(int ii=0; ii<3; ii++){
       smo_trig_stream[ii].trig = newsmo_trig(smo_trig_stream[ii].trig, smo_trig[ii], smo_dt);
@@ -81,6 +91,26 @@ void ecal_cosmic_hls(
   return;
 }
 
+ap_uint<8> disc(ap_uint<8> trig){
+  
+// only keep the leading edge
+    ap_uint<8> newtrig=0;
+    ap_uint<1> first=1;
+    for(int ii=0; ii<8; ii++){
+        if(trig[ii]){
+           if(first){
+              newtrig[ii]=1;
+              first=0;
+           }
+        }
+        else
+           first=1;
+
+     }
+        
+     return newtrig;
+}
+
 ap_uint<1> smo_multi_trig(ap_uint<9> fadc_hits,ap_uint<4> multp_thr)
 {
   ap_uint<4> hit_cnt = 0;
@@ -96,18 +126,21 @@ ap_uint<1> smo_multi_trig(ap_uint<9> fadc_hits,ap_uint<4> multp_thr)
 
 ap_uint<16> newsmo_trig( ap_uint<16> trig_stream, ap_uint<8> trig_cur, ap_uint<3> smo_dt ){
 
-  ap_uint<1> first=1;
-  ap_uint<16> newtrig = trig_stream;
+  ap_uint<16> newtrig[8]={0,0,0,0,0,0,0,0};
 
   for(int ii=0; ii<8; ii++){
      for(int jj=0; jj<8; jj++){
-         if( trig_cur[ii] && !newtrig[ii+jj] && jj<=smo_dt){
-             newtrig[ii+jj]=1;
+         if( trig_cur[ii] && !trig_stream[ii] && jj<=smo_dt){
+             newtrig[ii][ii+jj]=1;
          } 
      }
   }
 
-  return newtrig;
+  ap_uint<16> alltrig=trig_stream; 
+  for(int ii=0; ii<8; ii++)
+     alltrig = alltrig | newtrig[ii]; 
+
+  return alltrig;
 }
 
 ap_uint<8> gen_trig(smo_trig_t strig[3], ap_uint<2> multp_thr){
