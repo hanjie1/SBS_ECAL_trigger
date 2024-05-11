@@ -2,27 +2,46 @@
 == Design Size Report
 ================================================================
 
-* Instructions per Function for each Compilation Phase
-+-------------------+-------------------------+-----------------+------------------+----------------------+---------------+
-| Function          | Location                | Compile/Link    | Unroll/Inline    | Performance/Pipeline | Optimizations |
-+-------------------+-------------------------+-----------------+------------------+----------------------+---------------+
-| + ecal_cosmic_hls | ecal_cosmic_hls.cpp:7   | 2,186           | 7,562            | 5,716                | 5,722         |
-|    smo_multi_trig | ecal_cosmic_hls.cpp:114 |   420 (3 calls) | 1,776 (24 calls) |                      |               |
-|    disc           | ecal_cosmic_hls.cpp:94  |   168           |   306 (3 calls)  |                      |               |
-|    newsmo_trig    | ecal_cosmic_hls.cpp:127 |   357           | 1,509 (3 calls)  |                      |               |
-|    gen_trig       | ecal_cosmic_hls.cpp:146 |   177           |   154            |                      |               |
-|                   | ecal_cosmic_hls.h:40    |    10           |                  |                      |               |
-+-------------------+-------------------------+-----------------+------------------+----------------------+---------------+
+* Total Instructions per Compilation Phase
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Phase         | Step                        | Instructions | Description                                                                            |
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Compile/Link  |                             |  2,101       | After all functions are compiled and linked into a single design                       |
+|               |                             |              |                                                                                        |
+| Unroll/Inline |                             |              | After user unroll and inline pragmas are applied                                       |
+|               | (1) unroll                  | 29,317       | user unroll pragmas are applied                                                        |
+|               | (2) simplification          | 25,297       | simplification of applied user unroll pragmas                                          |
+|               | (3) inline                  | 25,284       | user inline pragmas are applied                                                        |
+|               | (4) simplification          | 25,049       | simplification of applied user inline pragmas                                          |
+|               |                             |              |                                                                                        |
+| Array/Struct  |                             |              | After user array partition and struct aggregate/disaggregate pragmas are applied       |
+|               | (1) array partition         | 25,037       | user array partition pragmas are applied                                               |
+|               | (2) simplification          | 25,031       | simplification of applied user array partition & struct aggregate/disaggregate pragmas |
+|               | (3) aggregate/disaggregate  | 25,035       | user struct aggregate/disaggregate pragmas are applied                                 |
+|               | (4) array reshape           | 28,631       | apply array reshape pragmas                                                            |
+|               | (5) access patterns         | 28,630       | array access pattern optmizations                                                      |
+|               |                             |              |                                                                                        |
+| Performance   |                             |              | After transformations are applied to meet performance pragma targets                   |
+|               | (1) loop simplification     | 28,497       | loop and instruction simplification                                                    |
+|               | (2) parallelization         | 28,159       | loops are unrolled or pipelined to meet performance targets                            |
+|               | (3) array partition         | 28,159       | arrays are partitioned to meet performance targets                                     |
+|               | (4) simplification          | 28,159       | simplification of design after performance transformations                             |
+|               |                             |              |                                                                                        |
+| HW Transforms |                             |              | After hardware transfomations                                                          |
+|               | (1) lowering                | 28,164       | initial conversion to HW specific instructions                                         |
+|               | (2) optimizations           | 28,165       | high level synthesis optimizations                                                     |
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
 
-* Description of Compilation Phases
-+----------------------+------------------------------------------------------------+
-| Compilation Phase    | Description                                                |
-+----------------------+------------------------------------------------------------+
-| Compile/Link         | All functions are compiled and linked into a single design |
-| Unroll/Inline        | After user unroll and inline pragmas are applied           |
-| Performance/Pipeline | After performance and pipeline pragmas are applied         |
-| Optimizations        | After high level synthesis optimizations                   |
-+----------------------+------------------------------------------------------------+
+* Instructions per Function for each Compilation Phase
++-------------------+-------------------------+----------------+------------------+------------------+-------------+---------------+
+| Function          | Location                | Compile/Link   | Unroll/Inline    | Array/Struct     | Performance | HW Transforms |
++-------------------+-------------------------+----------------+------------------+------------------+-------------+---------------+
+| + ecal_cosmic_hls | ecal_cosmic_hls.cpp:7   | 2,101          | 25,049           | 28,630           | 28,159      | 28,165        |
+|    smo_multi_trig | ecal_cosmic_hls.cpp:114 |  420 (3 calls) | 1,272 (24 calls) | 1,272 (24 calls) |             |               |
+|    disc           | ecal_cosmic_hls.cpp:94  |  168           |   261 (3 calls)  |   261 (3 calls)  |             |               |
+|    newsmo_trig    | ecal_cosmic_hls.cpp:127 |  357           | 1,092 (3 calls)  | 1,092 (3 calls)  |             |               |
+|    gen_trig       | ecal_cosmic_hls.cpp:146 |  177           |   148            |   148            |             |               |
++-------------------+-------------------------+----------------+------------------+------------------+-------------+---------------+
 
 * Design Size Message Settings
 +---------------------------------------------+--------+------------------------------------------------------------------+

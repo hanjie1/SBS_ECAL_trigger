@@ -4,7 +4,8 @@
 #include <ap_int.h>
 #include <hls_stream.h>
 
-#define NCHAN 27
+#define NFADCCHAN 256
+#define NDETCHAN 27
 
 // hit_t:
 // - every 32ns each fadc channel reports 13 bit energy, and 3 bit hit time (time offset in current 32ns clock: 0=0ns, 1=4ns, 2=8ns, ..., 7=28ns)
@@ -29,7 +30,7 @@ typedef struct
 //   vxs_ch[240] to vxs_ch[255]: VME slot 20, ch 0 to 15 FADC channels
 typedef struct
 {
-  hit_t vxs_ch[NCHAN];
+  hit_t vxs_ch[NFADCCHAN];
 } fadc_hits_vxs;
 
 typedef struct

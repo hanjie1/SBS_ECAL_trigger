@@ -1,7 +1,7 @@
 #include "ecal_cosmic_hls.h"
 using namespace std;
 
-ap_uint<5> smodule_ch[NCHAN] = {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26};
+ap_uint<8> smodule_ch[NDETCHAN] = {80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,206};
 
 // ecal_cosmic_hls:
 void ecal_cosmic_hls(
@@ -25,13 +25,13 @@ void ecal_cosmic_hls(
 #pragma HLS PIPELINE II=1 style=flp
 
   fadc_hits_vxs fadc_hits = s_fadc_hits_vxs.read();
-  static ap_uint<16> fadc_hits_stream[NCHAN]={0};
+  static ap_uint<16> fadc_hits_stream[NFADCCHAN]={0};
   if(smo_dt<hit_dt) smo_dt = hit_dt;
 
 // for a single channel,if there is a hit, register the hit in fadc_hits_stream[ch][t]=1,
 // and extend the hit time from the leading edge t to t+dt
 // the follwoing hits within [t,t+dt] are ignored 
-  for(int ch=0; ch<NCHAN; ch++){
+  for(int ch=0; ch<NFADCCHAN; ch++){
      int tt = fadc_hits.vxs_ch[ch].t;
      ap_uint<1> first = !fadc_hits_stream[ch][tt];   // check if there is already a hit at t
      for(int ii=0; ii<8; ii++){ 
@@ -49,9 +49,9 @@ void ecal_cosmic_hls(
 
  
   for(int t=0; t<8; t++){
-      ap_uint<NCHAN> tmp_fadc_hits=0;
-      for(int nn=0; nn<NCHAN; nn++){
-          ap_uint<5> ch = smodule_ch[nn];
+      ap_uint<NDETCHAN> tmp_fadc_hits=0;
+      for(int nn=0; nn<NDETCHAN; nn++){
+          ap_uint<8> ch = smodule_ch[nn];
           tmp_fadc_hits[nn] = fadc_hits_stream[ch][t];  // organize the hits according to block number
       }
 
@@ -81,7 +81,7 @@ void ecal_cosmic_hls(
 
   s_trigger_t.write(final_trig);
 
-  for(int ch=0; ch<NCHAN; ch++)
+  for(int ch=0; ch<NFADCCHAN; ch++)
       fadc_hits_stream[ch] = fadc_hits_stream[ch]>>8;
 
   for(int ii=0; ii<3; ii++)

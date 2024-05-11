@@ -31,7 +31,7 @@ int main(int argc, char *argv[])
         continue;
 
       int nn=0;
-      while( !infile.eof() && nn<NCHAN) 
+      while( !infile.eof() && nn<NFADCCHAN) 
       {
          int ee,tt;
          infile>>ee;
@@ -67,7 +67,7 @@ int main(int argc, char *argv[])
   while(!s_smo_trig_t[0].empty()){
      for(int ii=0; ii<3; ii++){
        ap_uint<16> tmp = s_smo_trig_t[ii].read().trig;
-       printf("Find smodule hit at frame %d: nsmo=%d, t=%16x\n",nn,ii,tmp.to_uint());
+       printf("Find smodule hit at frame %d: nsmo=%d, t=%d\n",nn,ii,tmp.to_uint());
        }
      nn++;
   }

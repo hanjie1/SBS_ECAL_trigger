@@ -1,7 +1,7 @@
 <profile>
 
 <ReportVersion>
-<Version>2023.1</Version>
+<Version>2023.2</Version>
 </ReportVersion>
 
 <UserAssignments>
@@ -19,7 +19,7 @@
 <PipelineType>yes(flp)</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>21.418</EstimatedClockPeriod>
+<EstimatedClockPeriod>21.202</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
@@ -34,12 +34,17 @@
 <Interval-min>1</Interval-min>
 <Interval-max>1</Interval-max>
 </SummaryOfOverallLatency>
+<SummaryOfViolations>
+<IssueType>-</IssueType>
+<ViolationType>-</ViolationType>
+<SourceLocation>ecal_cosmic_hls.cpp:25</SourceLocation>
+</SummaryOfViolations>
 </PerformanceEstimates>
 
 <AreaEstimates>
 <Resources>
-<FF>274</FF>
-<LUT>15141</LUT>
+<FF>2106</FF>
+<LUT>78448</LUT>
 <BRAM_18K>0</BRAM_18K>
 <DSP>0</DSP>
 <URAM>0</URAM>
@@ -128,7 +133,7 @@
 <IOProtocol>ap_fifo</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>432</Bits>
+<Bits>4096</Bits>
 <Attribute>control</Attribute>
 <CType>int</CType>
 </RtlPorts>
