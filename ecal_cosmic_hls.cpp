@@ -1,157 +1,50 @@
 #include "ecal_cosmic_hls.h"
 using namespace std;
 
-ap_uint<8> smodule_ch[NDETCHAN] = {80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,206};
+/* detector channels maps
+ * row, col, super module 
+ * row -- row number
+ * col -- colum number for that row
+ * super module -- which super module for that crate it belongs to
+ * Crate 1 -7 have different maps
+ * Here is the map for crate 1
+*/ 
+block_coords detmap[NFADCCHAN] = { {1,1,1},{1,2,1},{1,3,1},{1,4,2},{1,5,2},{1,6,2},{1,7,3},{1,8,3},{1,9,3},{1,10,4},{1,11,4},{1,12,4},{2,1,1},{2,2,1},{2,3,1},{2,4,2},{2,5,2},{2,6,2},{2,7,3},{2,8,3},{2,9,3},{2,10,4},{2,11,4},{2,12,4},{3,1,1},{3,2,1},{3,3,1},{3,4,2},{3,5,2},{3,6,2},{3,7,3},{3,8,3},{3,9,3},{3,10,4},{3,11,4},{3,12,4},{4,1,5},{4,2,5},{4,3,5},{4,4,6},{4,5,6},{4,6,6},{4,7,7},{4,8,7},{4,9,7},{4,10,8},{4,11,8},{4,12,8},{4,13,9},{4,14,9},{4,15,9},{4,16,10},{4,17,10},{4,18,10},{5,1,5},{5,2,5},{5,3,5},{5,4,6},{5,5,6},{5,6,6},{5,7,7},{5,8,7},{5,9,7},{5,10,8},{5,11,8},{5,12,8},{5,13,9},{5,14,9},{5,15,9},{5,16,10},{5,17,10},{5,18,10},{6,1,5},{6,2,5},{6,3,5},{6,4,6},{6,5,6},{6,6,6},{6,7,7},{6,8,7},{6,9,7},{6,10,8},{6,11,8},{6,12,8},{6,13,9},{6,14,9},{6,15,9},{6,16,10},{6,17,10},{6,18,10},{7,1,11},{7,2,11},{7,3,11},{7,4,12},{7,5,12},{7,6,12},{7,7,13},{7,8,13},{7,9,13},{7,10,14},{7,11,14},{7,12,14},{7,13,15},{7,14,15},{7,15,15},{7,16,16},{7,17,16},{7,18,16},{7,19,17},{7,20,17},{7,21,17},{8,1,11},{8,2,11},{8,3,11},{8,4,12},{8,5,12},{8,6,12},{8,7,13},{8,8,13},{8,9,13},{8,10,14},{8,11,14},{8,12,14},{8,13,15},{8,14,15},{8,15,15},{8,16,16},{8,17,16},{8,18,16},{8,19,17},{8,20,17},{8,21,17},{9,1,11},{9,2,11},{9,3,11},{9,4,12},{9,5,12},{9,6,12},{9,7,13},{9,8,13},{9,9,13},{9,10,14},{9,11,14},{9,12,14},{9,13,15},{9,14,15},{9,15,15},{9,16,16},{9,17,16},{9,18,16},{9,19,17},{9,20,17},{9,21,17},{10,1,18},{10,2,18},{10,3,18},{10,4,19},{10,5,19},{10,6,19},{10,7,20},{10,8,20},{10,9,20},{10,10,21},{10,11,21},{10,12,21},{10,13,22},{10,14,22},{10,15,22},{10,16,23},{10,17,23},{10,18,23},{10,19,24},{10,20,24},{10,21,24},{11,1,18},{11,2,18},{11,3,18},{11,4,19},{11,5,19},{11,6,19},{11,7,20},{11,8,20},{11,9,20},{11,10,21},{11,11,21},{11,12,21},{11,13,22},{11,14,22},{11,15,22},{11,16,23},{11,17,23},{11,18,23},{11,19,24},{11,20,24},{11,21,24},{12,1,18},{12,2,18},{12,3,18},{12,4,19},{12,5,19},{12,6,19},{12,7,20},{12,8,20},{12,9,20},{12,10,21},{12,11,21},{12,12,21},{12,13,22},{12,14,22},{12,15,22},{12,16,23},{12,17,23},{12,18,23},{12,19,24},{12,20,24},{12,21,24}};
 
 // ecal_cosmic_hls:
 void ecal_cosmic_hls(
-    ap_uint<3> hit_dt,
-    ap_uint<3> smo_dt,
-    ap_uint<2> nsmo_threshold,       // how many super module is required to be fired
-    ap_uint<4> mltp_threshold[3],    // how many PMTs are required to be fired per super module
+    TYPE_T hit_dt,
+    TYPE_T row_dt,
+    ap_uint<2> row_threshold,       // how many rows is required to be fired
     hls::stream<fadc_hits_vxs> &s_fadc_hits_vxs,
-    hls::stream<smo_trig_t> (&s_smo_trig_t)[3],
     hls::stream<trigger_t> &s_trigger_t
 
 )
 {
 
 #pragma HLS INTERFACE ap_fifo port=s_fadc_hits_vxs
-#pragma HLS INTERFACE ap_fifo port=s_smo_trig_t[0]
-#pragma HLS INTERFACE ap_fifo port=s_smo_trig_t[1]
-#pragma HLS INTERFACE ap_fifo port=s_smo_trig_t[2]
 #pragma HLS INTERFACE ap_fifo port=s_trigger_t
 
 #pragma HLS PIPELINE II=1 style=flp
 
   fadc_hits_vxs fadc_hits = s_fadc_hits_vxs.read();
-  static ap_uint<16> fadc_hits_stream[NFADCCHAN]={0};
-  if(smo_dt<hit_dt) smo_dt = hit_dt;
+  static ap_uint<16> row_hits_stream[NROW]={0};
+  if(row_dt<hit_dt) row_dt = hit_dt;
 
-// for a single channel,if there is a hit, register the hit in fadc_hits_stream[ch][t]=1,
-// and extend the hit time from the leading edge t to t+dt
-// the follwoing hits within [t,t+dt] are ignored 
   for(int ch=0; ch<NFADCCHAN; ch++){
-     int tt = fadc_hits.vxs_ch[ch].t;
-     ap_uint<1> first = !fadc_hits_stream[ch][tt];   // check if there is already a hit at t
-     for(int ii=0; ii<8; ii++){ 
-         if(fadc_hits.vxs_ch[ch].e>0 && ii<=hit_dt && first){
-            fadc_hits_stream[ch][tt+ii]=1;
-         }
-     }
+     TYPE_T tt = fadc_hits.vxs_ch[ch].t;
+     TYPE_E ee = fadc_hits.vxs_ch[ch].e;
+
+     TYPE_ROW tmp_row = detmap[ch].row;
+
+     row_hits_stream[tmp_row-1][tt] |= (ee>0 ? 1:0);
   }
 
+  for(int ii=0; ii<NROW; ii++){
+     or_extend(row_hits_stream[ii][0:8]);
 
-// trigger candidate from each super module for the current frame
-  ap_uint<8> smo_trig[3];
-#pragma HLS ARRAY_PARTITION variable=mltp_threshold dim=1 type=complete
-#pragma HLS ARRAY_PARTITION variable=smo_trig dim=2 type=complete
-
- 
-  for(int t=0; t<8; t++){
-      ap_uint<NDETCHAN> tmp_fadc_hits=0;
-      for(int nn=0; nn<NDETCHAN; nn++){
-          ap_uint<8> ch = smodule_ch[nn];
-          tmp_fadc_hits[nn] = fadc_hits_stream[ch][t];  // organize the hits according to block number
-      }
-
-      smo_trig[0][t] = smo_multi_trig(tmp_fadc_hits(8,0),mltp_threshold[0]);
-      smo_trig[1][t] = smo_multi_trig(tmp_fadc_hits(17,9),mltp_threshold[1]);
-      smo_trig[2][t] = smo_multi_trig(tmp_fadc_hits(26,18),mltp_threshold[2]);
-  } 
-
-// pass smo_trig to a distriminator to only keep the leading time per trigger
-  for(int ii=0; ii<3; ii++){
-     smo_trig[ii] = disc(smo_trig[ii]);
-}
-
-// extend the smo_trig from t to t+smo_dt, if there is an existing trigger, then ignore
-  static smo_trig_t smo_trig_stream[3]={{0},{0},{0}};
-
-  for(int ii=0; ii<3; ii++){
-      smo_trig_stream[ii].trig = newsmo_trig(smo_trig_stream[ii].trig, smo_trig[ii], smo_dt);
   }
-
-  ap_uint<8> trigger = gen_trig(smo_trig_stream, nsmo_threshold);
-  trigger_t final_trig;
-  final_trig.trig = trigger;
-
-  for(int ii=0; ii<3; ii++)
-     s_smo_trig_t[ii].write(smo_trig_stream[ii]);
-
-  s_trigger_t.write(final_trig);
-
-  for(int ch=0; ch<NFADCCHAN; ch++)
-      fadc_hits_stream[ch] = fadc_hits_stream[ch]>>8;
-
-  for(int ii=0; ii<3; ii++)
-     smo_trig_stream[ii].trig = smo_trig_stream[ii].trig>>8;
 
 
   return;
-}
-
-ap_uint<8> disc(ap_uint<8> trig){
-  
-// only keep the leading edge
-    ap_uint<8> newtrig=0;
-    ap_uint<1> first=1;
-    for(int ii=0; ii<8; ii++){
-        if(trig[ii]){
-           if(first){
-              newtrig[ii]=1;
-              first=0;
-           }
-        }
-        else
-           first=1;
-
-     }
-        
-     return newtrig;
-}
-
-ap_uint<1> smo_multi_trig(ap_uint<9> fadc_hits,ap_uint<4> multp_thr)
-{
-  ap_uint<4> hit_cnt = 0;
-
-  for(int i=0;i<9;i++)
-    hit_cnt+= fadc_hits[i] ? 1 : 0;
-
-  if(hit_cnt >= multp_thr)
-    return 1;
-
-  return 0;
-}
-
-ap_uint<16> newsmo_trig( ap_uint<16> trig_stream, ap_uint<8> trig_cur, ap_uint<3> smo_dt ){
-
-  ap_uint<16> newtrig[8]={0,0,0,0,0,0,0,0};
-
-  for(int ii=0; ii<8; ii++){
-     for(int jj=0; jj<8; jj++){
-         if( trig_cur[ii] && !trig_stream[ii] && jj<=smo_dt){
-             newtrig[ii][ii+jj]=1;
-         } 
-     }
-  }
-
-  ap_uint<16> alltrig=trig_stream; 
-  for(int ii=0; ii<8; ii++)
-     alltrig = alltrig | newtrig[ii]; 
-
-  return alltrig;
-}
-
-ap_uint<8> gen_trig(smo_trig_t strig[3], ap_uint<2> multp_thr){
-
-  ap_uint<8> trig=0; 
- 
-  for(int t=0; t<8; t++){
-      ap_uint<2> hit_cnt = strig[0].trig[t]+strig[1].trig[t]+strig[2].trig[t];
-      if(hit_cnt >= multp_thr)
-         trig[t]=1;
-  }  
-
-  return trig;
 }

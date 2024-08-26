@@ -4,8 +4,15 @@
 #include <ap_int.h>
 #include <hls_stream.h>
 
-#define NFADCCHAN 256
-#define NDETCHAN 27
+#define NFADCCHAN 216
+#define NCOL 7   
+#define NROW 4
+
+TYPEdef ap_uint<13> TYPE_E;
+TYPEdef ap_uint<3> TYPE_T;
+TYPEdef ap_uint<4> TYPE_ROW;
+TYPEdef ap_uint<5> TYPE_COL;
+TYPEdef ap_uint<5> TYPE_SMO;
 
 // hit_t:
 // - every 32ns each fadc channel reports 13 bit energy, and 3 bit hit time (time offset in current 32ns clock: 0=0ns, 1=4ns, 2=8ns, ..., 7=28ns)
@@ -13,9 +20,20 @@
 // - energy, e, will saturate at 8191 (e.g. if the FADC integral (after pedestal subtraction and gain) is greater than 8191, the FADC report 8191
 typedef struct
 {
-  ap_uint<13> e;
-  ap_uint<3> t;
+  TYPE_E e;
+  TYPE_T t;
 } hit_t;
+
+// FADC channel to the detector channel map
+// row --- row number (start at 1)
+// col --- column number (start at 1)
+// smo --- super module number (start at 1)
+typedef struct{
+   TYPE_ROW row;
+   TYPE_COL col;
+   TYPE_SMO smo;
+}block_coords;
+
 
 // fadc_hits_vxs:
 // - contains 256 VXS channels worth + 32 fiber of hit_t reported each 32ns
@@ -46,12 +64,10 @@ typedef struct
 
 
 void ecal_cosmic_hls(
-    ap_uint<3> hit_dt,
-    ap_uint<3> smo_dt,    // smo_dt>=hit_dt
+    TYPE_T hit_dt,
+    TYPE_T smo_dt,    // smo_dt>=hit_dt
     ap_uint<2> nsmo_threshold,       // how many super module is required to be fired
-    ap_uint<4> mltp_threshold[3],    // how many PMTs are required to be fired per super module
     hls::stream<fadc_hits_vxs> &s_fadc_hits_vxs,
-    hls::stream<smo_trig_t> (&s_smo_trig_t)[3],
     hls::stream<trigger_t> &s_trigger_t
 );
 
