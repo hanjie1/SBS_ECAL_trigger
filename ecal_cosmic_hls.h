@@ -13,6 +13,9 @@ TYPEdef ap_uint<3> TYPE_T;
 TYPEdef ap_uint<4> TYPE_ROW;
 TYPEdef ap_uint<5> TYPE_COL;
 TYPEdef ap_uint<5> TYPE_SMO;
+TYPEdef ap_uint<8> TYPE_TRIG;
+TYPEdef ap_uint<16> TYPE_LONGT;
+TYPEdef ap_uint<2> TYPE_ROWTHRESHOLD;
 
 // hit_t:
 // - every 32ns each fadc channel reports 13 bit energy, and 3 bit hit time (time offset in current 32ns clock: 0=0ns, 1=4ns, 2=8ns, ..., 7=28ns)
@@ -53,27 +56,17 @@ typedef struct
 
 typedef struct
 {
-  ap_uint<16> trig;
-} smo_trig_t;
-
-typedef struct
-{
-  ap_uint<8> trig;
+  TYPE_TRIG trig;
 } trigger_t;
 
-
-
 void ecal_cosmic_hls(
-    TYPE_T hit_dt,
-    TYPE_T smo_dt,    // smo_dt>=hit_dt
-    ap_uint<2> nsmo_threshold,       // how many super module is required to be fired
+    TYPE_T hit_width,
+    TYPE_ROWTHRESHOLD row_threshold,       // number of rows is required to be in coincidence
     hls::stream<fadc_hits_vxs> &s_fadc_hits_vxs,
     hls::stream<trigger_t> &s_trigger_t
 );
 
-ap_uint<8> disc(ap_uint<8> trig);
-ap_uint<1> smo_multi_trig(ap_uint<9> fadc_hits,ap_uint<4> multp_thr);
-ap_uint<16> newsmo_trig( ap_uint<16> trig_stream, ap_uint<8> trig_cur, ap_uint<3> smo_dt );
-ap_uint<8> gen_trig(smo_trig_t strig[3], ap_uint<2> multp_thr);
+TYPE_TRIG Trig_multiplicity(TYPE_TRIG row_hits, TYPE_ROWTHRESHOLD row_threshold);
+TYPE_TRIG disc( TYPE_LONGT t_stream, ap_uint<1> lastT);
 
 #endif

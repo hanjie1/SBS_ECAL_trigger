@@ -13,9 +13,8 @@ block_coords detmap[NFADCCHAN] = { {1,1,1},{1,2,1},{1,3,1},{1,4,2},{1,5,2},{1,6,
 
 // ecal_cosmic_hls:
 void ecal_cosmic_hls(
-    TYPE_T hit_dt,
-    TYPE_T row_dt,
-    ap_uint<2> row_threshold,       // how many rows is required to be fired
+    TYPE_T hit_width,
+    TYPE_ROWTHRESHOLD row_threshold,       // how many rows is required to be in coincidence
     hls::stream<fadc_hits_vxs> &s_fadc_hits_vxs,
     hls::stream<trigger_t> &s_trigger_t
 
@@ -28,23 +27,92 @@ void ecal_cosmic_hls(
 #pragma HLS PIPELINE II=1 style=flp
 
   fadc_hits_vxs fadc_hits = s_fadc_hits_vxs.read();
-  static ap_uint<16> row_hits_stream[NROW]={0};
-  if(row_dt<hit_dt) row_dt = hit_dt;
+  static TYPE_LONGT fadc_hits_stream[NFADCCHAN]={0};
 
-  for(int ch=0; ch<NFADCCHAN; ch++){
+// for a single channel,if there is a hit, register the hit in fadc_hits_stream[ch][t]=1,
+// and extend the hit time from the leading edge t to t+hit_width
+// the follwoing hits within [t,t+hit_width] are ignored 
+// This is similar to a discriminator module with adjustable output pulse width defined by hit_width
+  int ch=0;
+  int dt=0;
+  for(ch=0; ch<NFADCCHAN; ch++){
      TYPE_T tt = fadc_hits.vxs_ch[ch].t;
-     TYPE_E ee = fadc_hits.vxs_ch[ch].e;
-
-     TYPE_ROW tmp_row = detmap[ch].row;
-
-     row_hits_stream[tmp_row-1][tt] |= (ee>0 ? 1:0);
+     ap_uint<1> first = !fadc_hits_stream[ch][tt];   // check if there is already a hit at t
+     for(dt=0; dt<8; dt++){
+         if(fadc_hits.vxs_ch[ch].e>0 && dt<=hit_width && first){
+            fadc_hits_stream[ch][tt+dt]=1;
+         }
+     }
   }
 
-  for(int ii=0; ii<NROW; ii++){
-     or_extend(row_hits_stream[ii][0:8]);
-
+// Take OR of all columns of a row
+  TYPE_TRIG row_or_hits[NROW] = {0};
+  for(dt=0; dt<8; dt++){
+     for(ch=0; ch<NFADCCHAN; ch++){
+      TYPE_ROW tmp_row = detmap[ch].row;
+      row_or_hits[tmp_row-1] |= fadc_hits_stream[ch][dt];
+     }
   }
 
+// Pass the results of all the rows through a multiplicity threshold
+  TYPE_TRIG multi_row_trig;  
+  multi_row_trig = Trig_multiplicity(row_or_hits, row_threshold);
+  
+ 
+// Pass the multiplicity OR through a discriminator and the rising edge is the trigger time
+  static ap_uint<1> lastT=0;  // the last time bit in the previous time frame
+  TYPE_TRIG trig_t=0;
+
+  trig_t = Disc(multi_row_trig, lastT); 
+
+  trigger_t final_trig;
+  final_trig.trig = trig_t;
+  s_trigger_t.write(final_trig);
+
+  lastT = multi_row_trig[7];
+
+  for(ch=0; ch<NFADCCHAN; ch++)
+      fadc_hits_stream[ch] = fadc_hits_stream[ch]>>8;
 
   return;
+}
+
+TYPE_TRIG Trig_multiplicity(TYPE_TRIG row_hits, TYPE_ROWTHRESHOLD row_threshold){
+
+  int nrow=0;
+  int tt=0;
+  TYPE_ROW tot_hits[8]={0}; // number of planes fired per 4 ns
+
+  TYPE_TRIG trig_t={0};
+  for(tt=0; tt<8; tt++{
+     for(nrow=0; nrow<NROW; nrow++){
+        tot_hits[tt] += row_hits[nrow][tt]; 
+     }  
+     trig_t[tt] = (tot_hits[tt]>row_threshold)?1:0;
+  }
+
+  return trig_t;
+}
+
+
+TYPE_TRIG disc( TYPE_LONGT t_stream, ap_uint<1> lastT){
+  
+  int dt=0;
+  TYPE_TRIG pre_t;
+  TYPE_TRIG cur_t;
+
+  pre_t[0] = lastT;
+  for(dt=1; dt<8; dt++)
+     pre_t[dt] = t_stream[dt-1];
+
+  for(dt=0; dt<8; dt++)
+     cur_t[dt] = t_stream[dt];
+
+
+// if there is a rising edge, the trigger is geneated at the leading edge. 
+  TYPE_TRIG trig_t;
+  for(dt=0; dt<8; dt++)
+     if(pre_t[dt]==0 && cur_t[dt]==1) trig_t[dt]=1;   
+
+  return trig_t;
 }
