@@ -4,18 +4,19 @@
 #include <ap_int.h>
 #include <hls_stream.h>
 
-#define NFADCCHAN 216
-#define NCOL 7   
-#define NROW 4
+#define NFADCCHAN 54
+#define NDETCHAN 216
+#define NCOL 27
+#define NROW 12
 
-TYPEdef ap_uint<13> TYPE_E;
-TYPEdef ap_uint<3> TYPE_T;
-TYPEdef ap_uint<4> TYPE_ROW;
-TYPEdef ap_uint<5> TYPE_COL;
-TYPEdef ap_uint<5> TYPE_SMO;
-TYPEdef ap_uint<8> TYPE_TRIG;
-TYPEdef ap_uint<16> TYPE_LONGT;
-TYPEdef ap_uint<2> TYPE_ROWTHRESHOLD;
+typedef ap_uint<13> TYPE_E;
+typedef ap_uint<3> TYPE_T;
+typedef ap_uint<4> TYPE_ROW;
+typedef ap_uint<5> TYPE_COL;
+typedef ap_uint<5> TYPE_SMO;
+typedef ap_uint<8> TYPE_TRIG;
+typedef ap_uint<16> TYPE_LONGT;
+typedef ap_uint<2> TYPE_ROWTHRESHOLD;
 
 // hit_t:
 // - every 32ns each fadc channel reports 13 bit energy, and 3 bit hit time (time offset in current 32ns clock: 0=0ns, 1=4ns, 2=8ns, ..., 7=28ns)
@@ -66,7 +67,7 @@ void ecal_cosmic_hls(
     hls::stream<trigger_t> &s_trigger_t
 );
 
-TYPE_TRIG Trig_multiplicity(TYPE_TRIG row_hits, TYPE_ROWTHRESHOLD row_threshold);
-TYPE_TRIG disc( TYPE_LONGT t_stream, ap_uint<1> lastT);
+TYPE_TRIG Trig_multiplicity(TYPE_TRIG row_hits[NROW], TYPE_ROWTHRESHOLD row_threshold);
+TYPE_TRIG Disc( TYPE_TRIG t_stream, ap_uint<1> lastT);
 
 #endif
