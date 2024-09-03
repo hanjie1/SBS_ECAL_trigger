@@ -8,8 +8,8 @@ using namespace std;
 int main(int argc, char *argv[])
 {
 
-  TYPE_T hit_dt = 2;
-  TYPE_ROWTHRESHOLD row_threshold = 1;
+  TYPE_T hit_dt = 3;
+  TYPE_ROWTHRESHOLD row_threshold = 3;
   hls::stream<fadc_hits_vxs> s_fadc_hits_vxs;
   hls::stream<trigger_t> s_trigger_t;
 
@@ -32,6 +32,38 @@ int main(int argc, char *argv[])
          }
        } 
        s_fadc_hits_vxs.write(new_hits);
+     }
+  }
+
+  if(CHKCUSTOM){
+     int nframe=3;
+     int ii=0;
+     for(ii=0; ii<nframe; ii++){
+
+         fadc_hits_vxs new_hits;
+
+         char filename[200];
+         snprintf(filename, 200, "%s%d.txt","/daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/cosmic1/frame",ii);
+         ifstream infile(filename);
+         if(infile.is_open())
+           printf("open file: %s\n",filename);
+         else
+           continue;
+
+         int nn=0;
+         while( !infile.eof() && nn<NFADCCHAN)
+         {
+            int ee,tt;
+            infile>>ee;
+            infile>>tt;
+            new_hits.vxs_ch[nn].e = (ap_uint<13>)ee;
+            new_hits.vxs_ch[nn].t = (ap_uint<3>)tt;
+            nn++;
+         }
+         printf("%d %d\n",ii,nn);
+         infile.close();
+
+         s_fadc_hits_vxs.write(new_hits);
      }
   }
 

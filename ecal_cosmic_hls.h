@@ -4,7 +4,7 @@
 #include <ap_int.h>
 #include <hls_stream.h>
 
-#define NFADCCHAN 54
+#define NFADCCHAN 216
 #define NDETCHAN 216
 #define NCOL 27
 #define NROW 12
@@ -16,7 +16,7 @@ typedef ap_uint<5> TYPE_COL;
 typedef ap_uint<5> TYPE_SMO;
 typedef ap_uint<8> TYPE_TRIG;
 typedef ap_uint<16> TYPE_LONGT;
-typedef ap_uint<2> TYPE_ROWTHRESHOLD;
+typedef ap_uint<4> TYPE_ROWTHRESHOLD;
 
 // hit_t:
 // - every 32ns each fadc channel reports 13 bit energy, and 3 bit hit time (time offset in current 32ns clock: 0=0ns, 1=4ns, 2=8ns, ..., 7=28ns)

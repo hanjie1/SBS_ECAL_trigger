@@ -5676,3 +5676,565 @@ INFO: [HLS 200-2036] Building debug C Simulation binaries
 INFO: [SIM 211-1] CSim done with 0 errors.
 INFO: [SIM 211-3] *************** CSIM finish ***************
 INFO: [HLS 200-111] Finished Command csim_design CPU user time: 3.4 seconds. CPU system time: 0.55 seconds. Elapsed time: 4.15 seconds; current allocated memory: 0.000 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 32ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7vx550t-ffg1927-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+INFO: [HLS 200-1510] Running: set_part xc7vx550t-ffg1927-1 
+INFO: [HLS 200-1510] Running: create_clock -period 32 -name default 
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim 
+INFO: [HLS 200-1510] Running: source ./SBS_ECAL_trigger/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name ecal_cosmic_hls ecal_cosmic_hls 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1.2 seconds. CPU system time: 0.24 seconds. Elapsed time: 1.63 seconds; current allocated memory: 0.000 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 32ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7vx550t-ffg1927-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+INFO: [HLS 200-1510] Running: set_part xc7vx550t-ffg1927-1 
+INFO: [HLS 200-1510] Running: create_clock -period 32 -name default 
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim 
+INFO: [HLS 200-1510] Running: source ./SBS_ECAL_trigger/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name ecal_cosmic_hls ecal_cosmic_hls 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 3.34 seconds. CPU system time: 0.48 seconds. Elapsed time: 4.08 seconds; current allocated memory: 0.000 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 32ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7vx550t-ffg1927-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+INFO: [HLS 200-1510] Running: set_part xc7vx550t-ffg1927-1 
+INFO: [HLS 200-1510] Running: create_clock -period 32 -name default 
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim 
+INFO: [HLS 200-1510] Running: source ./SBS_ECAL_trigger/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name ecal_cosmic_hls ecal_cosmic_hls 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1.66 seconds. CPU system time: 0.31 seconds. Elapsed time: 2.14 seconds; current allocated memory: 0.000 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 32ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7vx550t-ffg1927-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+INFO: [HLS 200-1510] Running: set_part xc7vx550t-ffg1927-1 
+INFO: [HLS 200-1510] Running: create_clock -period 32 -name default 
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim 
+INFO: [HLS 200-1510] Running: source ./SBS_ECAL_trigger/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name ecal_cosmic_hls ecal_cosmic_hls 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 3.46 seconds. CPU system time: 0.53 seconds. Elapsed time: 4.19 seconds; current allocated memory: 0.000 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 32ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7vx550t-ffg1927-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+INFO: [HLS 200-1510] Running: set_part xc7vx550t-ffg1927-1 
+INFO: [HLS 200-1510] Running: create_clock -period 32 -name default 
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim 
+INFO: [HLS 200-1510] Running: source ./SBS_ECAL_trigger/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name ecal_cosmic_hls ecal_cosmic_hls 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1.62 seconds. CPU system time: 0.31 seconds. Elapsed time: 2.13 seconds; current allocated memory: 0.000 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 32ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7vx550t-ffg1927-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+INFO: [HLS 200-1510] Running: set_part xc7vx550t-ffg1927-1 
+INFO: [HLS 200-1510] Running: create_clock -period 32 -name default 
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim 
+INFO: [HLS 200-1510] Running: source ./SBS_ECAL_trigger/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name ecal_cosmic_hls ecal_cosmic_hls 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1.65 seconds. CPU system time: 0.29 seconds. Elapsed time: 2.12 seconds; current allocated memory: 0.000 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 32ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7vx550t-ffg1927-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+INFO: [HLS 200-1510] Running: set_part xc7vx550t-ffg1927-1 
+INFO: [HLS 200-1510] Running: create_clock -period 32 -name default 
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim 
+INFO: [HLS 200-1510] Running: source ./SBS_ECAL_trigger/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name ecal_cosmic_hls ecal_cosmic_hls 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 3.47 seconds. CPU system time: 0.59 seconds. Elapsed time: 4.32 seconds; current allocated memory: 0.000 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 32ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7vx550t-ffg1927-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+INFO: [HLS 200-1510] Running: set_part xc7vx550t-ffg1927-1 
+INFO: [HLS 200-1510] Running: create_clock -period 32 -name default 
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim 
+INFO: [HLS 200-1510] Running: source ./SBS_ECAL_trigger/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name ecal_cosmic_hls ecal_cosmic_hls 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1.7 seconds. CPU system time: 0.34 seconds. Elapsed time: 2.23 seconds; current allocated memory: 0.000 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 32ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7vx550t-ffg1927-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+INFO: [HLS 200-1510] Running: set_part xc7vx550t-ffg1927-1 
+INFO: [HLS 200-1510] Running: create_clock -period 32 -name default 
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim 
+INFO: [HLS 200-1510] Running: source ./SBS_ECAL_trigger/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name ecal_cosmic_hls ecal_cosmic_hls 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1.7 seconds. CPU system time: 0.29 seconds. Elapsed time: 2.15 seconds; current allocated memory: 0.000 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 32ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7vx550t-ffg1927-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+INFO: [HLS 200-1510] Running: set_part xc7vx550t-ffg1927-1 
+INFO: [HLS 200-1510] Running: create_clock -period 32 -name default 
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim 
+INFO: [HLS 200-1510] Running: source ./SBS_ECAL_trigger/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name ecal_cosmic_hls ecal_cosmic_hls 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1.59 seconds. CPU system time: 0.32 seconds. Elapsed time: 2.11 seconds; current allocated memory: 0.000 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2023.2 (64-bit)
+Tool Version Limit: 2023.10
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 32ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7vx550t-ffg1927-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+INFO: [HLS 200-1510] Running: set_part xc7vx550t-ffg1927-1 
+INFO: [HLS 200-1510] Running: create_clock -period 32 -name default 
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim 
+INFO: [HLS 200-1510] Running: source ./SBS_ECAL_trigger/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name ecal_cosmic_hls ecal_cosmic_hls 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.07 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.1 seconds; current allocated memory: 399.293 MB.
+INFO: [HLS 200-10] Analyzing design file 'ecal_cosmic_hls.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 3.03 seconds. CPU system time: 0.59 seconds. Elapsed time: 5.47 seconds; current allocated memory: 399.293 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 1,361 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: /daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/SBS_ECAL_trigger/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 45,895 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: /daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/SBS_ECAL_trigger/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 34,544 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: /daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/SBS_ECAL_trigger/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 32,895 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: /daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/SBS_ECAL_trigger/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 32,873 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: /daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/SBS_ECAL_trigger/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 31,146 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: /daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/SBS_ECAL_trigger/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 31,146 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: /daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/SBS_ECAL_trigger/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 31,147 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: /daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/SBS_ECAL_trigger/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 34,171 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: /daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/SBS_ECAL_trigger/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 34,170 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: /daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/SBS_ECAL_trigger/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 34,161 instructions in the design after the 'Performance' phase of compilation. See the Design Size Report for more details: /daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/SBS_ECAL_trigger/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 33,909 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: /daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/SBS_ECAL_trigger/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 33,909 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: /daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/SBS_ECAL_trigger/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 33,909 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: /daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/SBS_ECAL_trigger/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 33,916 instructions in the design after the 'HW Transforms' phase of compilation. See the Design Size Report for more details: /daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/SBS_ECAL_trigger/solution1/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 33,917 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: /daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/SBS_ECAL_trigger/solution1/syn/report/csynth_design_size.rpt
+WARNING: [HLS 214-172] Cannot apply disaggregate pragma/directive on stream object 's_fadc_hits_vxs' as it needs to be read/written in its entirety
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_93_5' is marked as complete unroll implied by the pipeline pragma (ecal_cosmic_hls.cpp:93:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_50_3' is marked as complete unroll implied by the pipeline pragma (ecal_cosmic_hls.cpp:50:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_51_4' is marked as complete unroll implied by the pipeline pragma (ecal_cosmic_hls.cpp:51:23)
+INFO: [HLS 214-291] Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma (ecal_cosmic_hls.cpp:49:31)
+INFO: [HLS 214-291] Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_38_1' is marked as complete unroll implied by the pipeline pragma (ecal_cosmic_hls.cpp:38:20)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_41_2' is marked as complete unroll implied by the pipeline pragma (ecal_cosmic_hls.cpp:41:23)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_170_3' is marked as complete unroll implied by the pipeline pragma (ecal_cosmic_hls.cpp:170:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_142_2' is marked as complete unroll implied by the pipeline pragma (ecal_cosmic_hls.cpp:142:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_139_1' is marked as complete unroll implied by the pipeline pragma (ecal_cosmic_hls.cpp:139:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_121_1' is marked as complete unroll implied by the pipeline pragma (ecal_cosmic_hls.cpp:121:21)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_122_2' is marked as complete unroll implied by the pipeline pragma (ecal_cosmic_hls.cpp:122:24)
+INFO: [HLS 214-291] Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma (ecal_cosmic_hls.cpp:103:24)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_93_5' (ecal_cosmic_hls.cpp:93:20) in function 'ecal_cosmic_hls' completely with a factor of 216 (ecal_cosmic_hls.cpp:22:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_50_3' (ecal_cosmic_hls.cpp:50:20) in function 'ecal_cosmic_hls' completely with a factor of 8 (ecal_cosmic_hls.cpp:22:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_51_4' (ecal_cosmic_hls.cpp:51:23) in function 'ecal_cosmic_hls' completely with a factor of 216 (ecal_cosmic_hls.cpp:22:0)
+INFO: [HLS 214-186] Unrolling loop 'anonymous' (ecal_cosmic_hls.cpp:49:31) in function 'ecal_cosmic_hls' completely with a factor of 11 (ecal_cosmic_hls.cpp:22:0)
+INFO: [HLS 214-186] Unrolling loop 'anonymous' () in function 'ecal_cosmic_hls' completely with a factor of 1 (ecal_cosmic_hls.cpp:22:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_38_1' (ecal_cosmic_hls.cpp:38:20) in function 'ecal_cosmic_hls' completely with a factor of 216 (ecal_cosmic_hls.cpp:22:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_41_2' (ecal_cosmic_hls.cpp:41:23) in function 'ecal_cosmic_hls' completely with a factor of 8 (ecal_cosmic_hls.cpp:22:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_170_3' (ecal_cosmic_hls.cpp:170:21) in function 'Disc' completely with a factor of 8 (ecal_cosmic_hls.cpp:132:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_142_2' (ecal_cosmic_hls.cpp:142:21) in function 'Disc' completely with a factor of 8 (ecal_cosmic_hls.cpp:132:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_139_1' (ecal_cosmic_hls.cpp:139:21) in function 'Disc' completely with a factor of 7 (ecal_cosmic_hls.cpp:132:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_121_1' (ecal_cosmic_hls.cpp:121:21) in function 'Trig_multiplicity' completely with a factor of 8 (ecal_cosmic_hls.cpp:99:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_122_2' (ecal_cosmic_hls.cpp:122:24) in function 'Trig_multiplicity' completely with a factor of 12 (ecal_cosmic_hls.cpp:99:0)
+INFO: [HLS 214-186] Unrolling loop 'anonymous' (ecal_cosmic_hls.cpp:103:24) in function 'Trig_multiplicity' completely with a factor of 7 (ecal_cosmic_hls.cpp:99:0)
+INFO: [HLS 214-186] Unrolling loop 'anonymous' () in function 'Trig_multiplicity' completely with a factor of 1 (ecal_cosmic_hls.cpp:99:0)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 's_fadc_hits_vxs' with compact=bit mode in 3456-bits (ecal_cosmic_hls.cpp:22:0)
+INFO: [HLS 214-364] Automatically inlining function 'Trig_multiplicity(ap_uint<8>*, ap_uint<4>)' to improve effectiveness of pipeline pragma in function 'ecal_cosmic_hls(ap_uint<3>, ap_uint<4>, hls::stream<fadc_hits_vxs, 0>&, hls::stream<trigger_t, 0>&)' (ecal_cosmic_hls.cpp:79:20)
+INFO: [HLS 214-364] Automatically inlining function 'Disc(ap_uint<8>, ap_uint<1>)' to improve effectiveness of pipeline pragma in function 'ecal_cosmic_hls(ap_uint<3>, ap_uint<4>, hls::stream<fadc_hits_vxs, 0>&, hls::stream<trigger_t, 0>&)' (ecal_cosmic_hls.cpp:85:12)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'ecal_cosmic_hls(ap_uint<3>, ap_uint<4>, hls::stream<fadc_hits_vxs, 0>&, hls::stream<trigger_t, 0>&)::fadc_hits_stream' due to pipeline pragma (ecal_cosmic_hls.cpp:27:9)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS3_I9trigger_tLi0EEEE16fadc_hits_stream': Complete partitioning on dimension 1. (ecal_cosmic_hls.cpp:30:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 41.16 seconds. CPU system time: 0.67 seconds. Elapsed time: 45.16 seconds; current allocated memory: 399.293 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 399.293 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 2.37 seconds. CPU system time: 0.08 seconds. Elapsed time: 2.5 seconds; current allocated memory: 527.293 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-23] ecal_cosmic_hls.cpp:40: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 6.52 seconds. CPU system time: 0.08 seconds. Elapsed time: 6.65 seconds; current allocated memory: 591.293 MB.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (ecal_cosmic_hls.cpp:27:9) to (ecal_cosmic_hls.cpp:97:1) in function 'ecal_cosmic_hls'... converting 3471 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'ecal_cosmic_hls' (ecal_cosmic_hls.cpp:15:44)...484 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 23.21 seconds. CPU system time: 0.19 seconds. Elapsed time: 23.5 seconds; current allocated memory: 783.293 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 29.42 seconds. CPU system time: 0.05 seconds. Elapsed time: 29.49 seconds; current allocated memory: 783.293 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'ecal_cosmic_hls' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'ecal_cosmic_hls' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'ecal_cosmic_hls'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, function 'ecal_cosmic_hls'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 30.43 seconds. CPU system time: 0.24 seconds. Elapsed time: 30.77 seconds; current allocated memory: 1.015 GB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 10.45 seconds. CPU system time: 0.08 seconds. Elapsed time: 11.14 seconds; current allocated memory: 1.015 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'ecal_cosmic_hls' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'ecal_cosmic_hls/hit_width' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'ecal_cosmic_hls/row_threshold' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'ecal_cosmic_hls/s_fadc_hits_vxs' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'ecal_cosmic_hls/s_trigger_t' to 'ap_fifo'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'ecal_cosmic_hls' to 'ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Register 'ecal_cosmic_hls_ap_uint_ap_uint_stream_stream_fadc_hits_stream_9' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'ecal_cosmic_hls_ap_uint_ap_uint_stream_stream_fadc_hits_stream_8' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'ecal_cosmic_hls_ap_uint_ap_uint_stream_stream_fadc_hits_stream_7' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'ecal_cosmic_hls_ap_uint_ap_uint_stream_stream_fadc_hits_stream_6' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'ecal_cosmic_hls_ap_uint_ap_uint_stream_stream_fadc_hits_stream_5' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'ecal_cosmic_hls_ap_uint_ap_uint_stream_stream_fadc_hits_stream_4' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'ecal_cosmic_hls_ap_uint_ap_uint_stream_stream_fadc_hits_stream_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'ecal_cosmic_hls_ap_uint_ap_uint_stream_stream_fadc_hits_stream_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'ecal_cosmic_hls_ap_uint_ap_uint_stream_stream_fadc_hits_stream_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'ecal_cosmic_hls_ap_uint_ap_uint_stream_stream_fadc_hits_stream' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_205' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_216' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_227' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_238' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_249' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_260' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_271' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_282' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_293' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_304' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_95' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_84' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_77' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_76' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_75' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_74' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_73' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_72' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_71' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_70' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_69' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_68' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_67' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_66' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_65' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_64' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_63' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_62' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_61' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_60' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_59' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_58' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_57' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_56' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_55' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_54' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_53' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_52' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_51' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_50' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_49' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_48' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_47' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_46' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_45' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_44' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_43' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_42' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_41' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_40' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_39' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_38' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_37' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_36' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_35' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_34' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_33' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_32' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_31' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_30' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_29' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_28' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_27' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_26' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_25' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_24' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_23' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_22' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_21' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_20' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_19' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_18' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_17' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_16' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_15' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_14' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_13' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_12' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_11' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_10' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_9' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_8' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_7' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_6' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_5' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_4' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_3' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_206' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_207' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_208' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_209' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_210' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_211' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_212' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_213' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_214' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_215' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_217' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_218' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_219' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_220' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_221' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_222' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_223' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_224' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_225' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_226' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_228' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_229' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_230' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_231' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_232' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_233' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_234' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_235' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_236' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_237' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_239' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_240' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_241' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_242' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_243' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_244' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_245' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_246' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_247' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_248' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_250' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_251' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_252' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_253' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_254' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_255' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_256' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_257' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_258' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_259' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_261' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_262' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_263' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_264' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_265' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_266' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_267' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_268' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_269' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_270' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_272' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_273' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_274' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_275' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_276' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_277' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_278' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_279' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_280' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_281' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_283' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_284' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_285' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_286' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_287' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_288' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_289' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_290' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_291' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_292' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_294' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_295' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_296' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_297' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_298' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_299' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_300' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_301' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_302' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_303' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_305' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_306' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_307' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_308' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_309' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_310' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_99' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_98' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_97' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_96' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_94' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_93' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_92' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_91' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_90' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_89' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_88' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_87' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_86' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_85' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_83' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_82' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_81' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_80' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_79' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS_78' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'lastT' is power-on initialization.
+INFO: [RTGEN 206-104] Estimated max fanout for 'ecal_cosmic_hls' is 5268 from HDL expression: (~((1'b1 == ap_block_state1_pp0_stage0_iter0) | ((1'b1 == ap_CS_iter1_fsm_state2) & (1'b1 == ap_block_state2_pp0_stage0_iter1))) & (1'b1 == ap_CS_iter0_fsm_state1))
+INFO: [RTGEN 206-100] Finished creating RTL model for 'ecal_cosmic_hls'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 35.83 seconds. CPU system time: 0.17 seconds. Elapsed time: 37.6 seconds; current allocated memory: 1.077 GB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 16.32 seconds. CPU system time: 1.01 seconds. Elapsed time: 19.73 seconds; current allocated memory: 1.327 GB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1.64 seconds. CPU system time: 0.08 seconds. Elapsed time: 1.78 seconds; current allocated memory: 1.390 GB.
+INFO: [VHDL 208-304] Generating VHDL RTL for ecal_cosmic_hls.
+INFO: [VLOG 209-307] Generating Verilog RTL for ecal_cosmic_hls.
+INFO: [HLS 200-789] **** Estimated Fmax: 43.10 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 200.48 seconds. CPU system time: 3.27 seconds. Elapsed time: 214.01 seconds; current allocated memory: 1024.000 MB.

@@ -1,446 +1,67 @@
 INFO: [SIM 2] *************** CSIM start ***************
 INFO: [SIM 4] CSIM will launch GCC as the compiler.
    Compiling ../../../../ecal_cosmic_hls_tb.cpp in debug mode
-   Compiling ../../../../ecal_cosmic_hls.cpp in debug mode
    Generating csim.exe
+open file: /daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/cosmic1/frame0.txt
+0 216
+open file: /daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/cosmic1/frame1.txt
+1 216
+open file: /daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/cosmic1/frame2.txt
+2 216
+Disc: pre_t = 00000000
+Disc: cur_t = 00000000
+hits at tt = 1, row = 1, col = 10, fadc chan=9
+hits at tt = 2, row = 1, col = 10, fadc chan=9
+hits at tt = 3, row = 1, col = 10, fadc chan=9
+hits at tt = 4, row = 1, col = 10, fadc chan=9
 hits at tt = 6, row = 1, col = 1, fadc chan=0
-hits at tt = 7, row = 1, col = 1, fadc chan=0
-row = 1 hits time = 00000011
-TRIG_MULTI: row = 1 hits time = 00000011
-Disc: pre_t = 00000001
-Disc: cur_t = 00000011
-hits at tt = 0, row = 1, col = 1, fadc chan=0
-hits at tt = 6, row = 1, col = 2, fadc chan=1
-hits at tt = 7, row = 1, col = 2, fadc chan=1
-row = 1 hits time = 10000011
-TRIG_MULTI: row = 1 hits time = 10000011
-Disc: pre_t = 11000001
-Disc: cur_t = 10000011
-hits at tt = 0, row = 1, col = 2, fadc chan=1
-hits at tt = 6, row = 1, col = 3, fadc chan=2
-hits at tt = 7, row = 1, col = 3, fadc chan=2
-row = 1 hits time = 10000011
-TRIG_MULTI: row = 1 hits time = 10000011
-Disc: pre_t = 11000001
-Disc: cur_t = 10000011
-hits at tt = 0, row = 1, col = 3, fadc chan=2
-hits at tt = 6, row = 1, col = 4, fadc chan=3
-hits at tt = 7, row = 1, col = 4, fadc chan=3
-row = 1 hits time = 10000011
-TRIG_MULTI: row = 1 hits time = 10000011
-Disc: pre_t = 11000001
-Disc: cur_t = 10000011
-hits at tt = 0, row = 1, col = 4, fadc chan=3
-hits at tt = 6, row = 1, col = 5, fadc chan=4
-hits at tt = 7, row = 1, col = 5, fadc chan=4
-row = 1 hits time = 10000011
-TRIG_MULTI: row = 1 hits time = 10000011
-Disc: pre_t = 11000001
-Disc: cur_t = 10000011
-hits at tt = 0, row = 1, col = 5, fadc chan=4
-hits at tt = 6, row = 1, col = 6, fadc chan=5
-hits at tt = 7, row = 1, col = 6, fadc chan=5
-row = 1 hits time = 10000011
-TRIG_MULTI: row = 1 hits time = 10000011
-Disc: pre_t = 11000001
-Disc: cur_t = 10000011
-hits at tt = 0, row = 1, col = 6, fadc chan=5
-hits at tt = 6, row = 1, col = 7, fadc chan=6
-hits at tt = 7, row = 1, col = 7, fadc chan=6
-row = 1 hits time = 10000011
-TRIG_MULTI: row = 1 hits time = 10000011
-Disc: pre_t = 11000001
-Disc: cur_t = 10000011
-hits at tt = 0, row = 1, col = 7, fadc chan=6
-hits at tt = 6, row = 1, col = 8, fadc chan=7
-hits at tt = 7, row = 1, col = 8, fadc chan=7
-row = 1 hits time = 10000011
-TRIG_MULTI: row = 1 hits time = 10000011
-Disc: pre_t = 11000001
-Disc: cur_t = 10000011
-hits at tt = 0, row = 1, col = 8, fadc chan=7
-hits at tt = 6, row = 1, col = 9, fadc chan=8
-hits at tt = 7, row = 1, col = 9, fadc chan=8
-row = 1 hits time = 10000011
-TRIG_MULTI: row = 1 hits time = 10000011
-Disc: pre_t = 11000001
-Disc: cur_t = 10000011
-hits at tt = 0, row = 1, col = 9, fadc chan=8
-hits at tt = 6, row = 1, col = 10, fadc chan=9
-hits at tt = 7, row = 1, col = 10, fadc chan=9
-row = 1 hits time = 10000011
-TRIG_MULTI: row = 1 hits time = 10000011
-Disc: pre_t = 11000001
-Disc: cur_t = 10000011
-hits at tt = 0, row = 1, col = 10, fadc chan=9
-hits at tt = 6, row = 1, col = 11, fadc chan=10
-hits at tt = 7, row = 1, col = 11, fadc chan=10
-row = 1 hits time = 10000011
-TRIG_MULTI: row = 1 hits time = 10000011
-Disc: pre_t = 11000001
-Disc: cur_t = 10000011
-hits at tt = 0, row = 1, col = 11, fadc chan=10
-hits at tt = 6, row = 1, col = 12, fadc chan=11
-hits at tt = 7, row = 1, col = 12, fadc chan=11
-row = 1 hits time = 10000011
-TRIG_MULTI: row = 1 hits time = 10000011
-Disc: pre_t = 11000001
-Disc: cur_t = 10000011
-hits at tt = 0, row = 1, col = 12, fadc chan=11
 hits at tt = 6, row = 2, col = 1, fadc chan=12
+hits at tt = 7, row = 1, col = 1, fadc chan=0
 hits at tt = 7, row = 2, col = 1, fadc chan=12
-row = 1 hits time = 10000000
-row = 2 hits time = 00000011
-TRIG_MULTI: row = 1 hits time = 10000000
-TRIG_MULTI: row = 2 hits time = 00000011
-Disc: pre_t = 11000001
-Disc: cur_t = 10000011
-hits at tt = 0, row = 2, col = 1, fadc chan=12
-hits at tt = 6, row = 2, col = 2, fadc chan=13
-hits at tt = 7, row = 2, col = 2, fadc chan=13
-row = 2 hits time = 10000011
-TRIG_MULTI: row = 2 hits time = 10000011
-Disc: pre_t = 11000001
-Disc: cur_t = 10000011
-hits at tt = 0, row = 2, col = 2, fadc chan=13
-hits at tt = 6, row = 2, col = 3, fadc chan=14
-hits at tt = 7, row = 2, col = 3, fadc chan=14
-row = 2 hits time = 10000011
-TRIG_MULTI: row = 2 hits time = 10000011
-Disc: pre_t = 11000001
-Disc: cur_t = 10000011
-hits at tt = 0, row = 2, col = 3, fadc chan=14
-hits at tt = 6, row = 2, col = 4, fadc chan=15
-hits at tt = 7, row = 2, col = 4, fadc chan=15
-row = 2 hits time = 10000011
-TRIG_MULTI: row = 2 hits time = 10000011
-Disc: pre_t = 11000001
-Disc: cur_t = 10000011
-hits at tt = 0, row = 2, col = 4, fadc chan=15
-hits at tt = 6, row = 2, col = 5, fadc chan=16
-hits at tt = 7, row = 2, col = 5, fadc chan=16
-row = 2 hits time = 10000011
-TRIG_MULTI: row = 2 hits time = 10000011
-Disc: pre_t = 11000001
-Disc: cur_t = 10000011
-hits at tt = 0, row = 2, col = 5, fadc chan=16
-hits at tt = 6, row = 2, col = 6, fadc chan=17
-hits at tt = 7, row = 2, col = 6, fadc chan=17
-row = 2 hits time = 10000011
-TRIG_MULTI: row = 2 hits time = 10000011
-Disc: pre_t = 11000001
-Disc: cur_t = 10000011
-hits at tt = 0, row = 2, col = 6, fadc chan=17
-hits at tt = 6, row = 2, col = 7, fadc chan=18
-hits at tt = 7, row = 2, col = 7, fadc chan=18
-row = 2 hits time = 10000011
-TRIG_MULTI: row = 2 hits time = 10000011
-Disc: pre_t = 11000001
-Disc: cur_t = 10000011
-hits at tt = 0, row = 2, col = 7, fadc chan=18
-hits at tt = 6, row = 2, col = 8, fadc chan=19
-hits at tt = 7, row = 2, col = 8, fadc chan=19
-row = 2 hits time = 10000011
-TRIG_MULTI: row = 2 hits time = 10000011
-Disc: pre_t = 11000001
-Disc: cur_t = 10000011
-hits at tt = 0, row = 2, col = 8, fadc chan=19
-hits at tt = 6, row = 2, col = 9, fadc chan=20
-hits at tt = 7, row = 2, col = 9, fadc chan=20
-row = 2 hits time = 10000011
-TRIG_MULTI: row = 2 hits time = 10000011
-Disc: pre_t = 11000001
-Disc: cur_t = 10000011
-hits at tt = 0, row = 2, col = 9, fadc chan=20
-hits at tt = 6, row = 2, col = 10, fadc chan=21
-hits at tt = 7, row = 2, col = 10, fadc chan=21
-row = 2 hits time = 10000011
-TRIG_MULTI: row = 2 hits time = 10000011
-Disc: pre_t = 11000001
-Disc: cur_t = 10000011
-hits at tt = 0, row = 2, col = 10, fadc chan=21
-hits at tt = 6, row = 2, col = 11, fadc chan=22
-hits at tt = 7, row = 2, col = 11, fadc chan=22
-row = 2 hits time = 10000011
-TRIG_MULTI: row = 2 hits time = 10000011
-Disc: pre_t = 11000001
-Disc: cur_t = 10000011
-hits at tt = 0, row = 2, col = 11, fadc chan=22
-hits at tt = 6, row = 2, col = 12, fadc chan=23
-hits at tt = 7, row = 2, col = 12, fadc chan=23
-row = 2 hits time = 10000011
-TRIG_MULTI: row = 2 hits time = 10000011
-Disc: pre_t = 11000001
-Disc: cur_t = 10000011
-hits at tt = 0, row = 2, col = 12, fadc chan=23
-hits at tt = 6, row = 3, col = 1, fadc chan=24
 hits at tt = 7, row = 3, col = 1, fadc chan=24
-row = 2 hits time = 10000000
-row = 3 hits time = 00000011
-TRIG_MULTI: row = 2 hits time = 10000000
-TRIG_MULTI: row = 3 hits time = 00000011
-Disc: pre_t = 11000001
-Disc: cur_t = 10000011
+row = 1 hits time = 01111011
+row = 2 hits time = 00000011
+row = 3 hits time = 00000001
+TRIG_MULTI: row = 1 hits time = 01111011
+TRIG_MULTI: row = 2 hits time = 00000011
+TRIG_MULTI: row = 3 hits time = 00000001
+Disc: pre_t = 00000000
+Disc: cur_t = 00000001
+hits at tt = 0, row = 1, col = 1, fadc chan=0
+hits at tt = 0, row = 2, col = 1, fadc chan=12
 hits at tt = 0, row = 3, col = 1, fadc chan=24
-hits at tt = 6, row = 3, col = 2, fadc chan=25
-hits at tt = 7, row = 3, col = 2, fadc chan=25
-row = 3 hits time = 10000011
-TRIG_MULTI: row = 3 hits time = 10000011
-Disc: pre_t = 11000001
-Disc: cur_t = 10000011
-hits at tt = 0, row = 3, col = 2, fadc chan=25
-hits at tt = 6, row = 3, col = 3, fadc chan=26
-hits at tt = 7, row = 3, col = 3, fadc chan=26
-row = 3 hits time = 10000011
-TRIG_MULTI: row = 3 hits time = 10000011
-Disc: pre_t = 11000001
-Disc: cur_t = 10000011
-hits at tt = 0, row = 3, col = 3, fadc chan=26
-hits at tt = 6, row = 3, col = 4, fadc chan=27
-hits at tt = 7, row = 3, col = 4, fadc chan=27
-row = 3 hits time = 10000011
-TRIG_MULTI: row = 3 hits time = 10000011
-Disc: pre_t = 11000001
-Disc: cur_t = 10000011
-hits at tt = 0, row = 3, col = 4, fadc chan=27
-hits at tt = 6, row = 3, col = 5, fadc chan=28
-hits at tt = 7, row = 3, col = 5, fadc chan=28
-row = 3 hits time = 10000011
-TRIG_MULTI: row = 3 hits time = 10000011
-Disc: pre_t = 11000001
-Disc: cur_t = 10000011
-hits at tt = 0, row = 3, col = 5, fadc chan=28
-hits at tt = 6, row = 3, col = 6, fadc chan=29
-hits at tt = 7, row = 3, col = 6, fadc chan=29
-row = 3 hits time = 10000011
-TRIG_MULTI: row = 3 hits time = 10000011
-Disc: pre_t = 11000001
-Disc: cur_t = 10000011
-hits at tt = 0, row = 3, col = 6, fadc chan=29
-hits at tt = 6, row = 3, col = 7, fadc chan=30
-hits at tt = 7, row = 3, col = 7, fadc chan=30
-row = 3 hits time = 10000011
-TRIG_MULTI: row = 3 hits time = 10000011
-Disc: pre_t = 11000001
-Disc: cur_t = 10000011
-hits at tt = 0, row = 3, col = 7, fadc chan=30
-hits at tt = 6, row = 3, col = 8, fadc chan=31
-hits at tt = 7, row = 3, col = 8, fadc chan=31
-row = 3 hits time = 10000011
-TRIG_MULTI: row = 3 hits time = 10000011
-Disc: pre_t = 11000001
-Disc: cur_t = 10000011
-hits at tt = 0, row = 3, col = 8, fadc chan=31
-hits at tt = 6, row = 3, col = 9, fadc chan=32
-hits at tt = 7, row = 3, col = 9, fadc chan=32
-row = 3 hits time = 10000011
-TRIG_MULTI: row = 3 hits time = 10000011
-Disc: pre_t = 11000001
-Disc: cur_t = 10000011
-hits at tt = 0, row = 3, col = 9, fadc chan=32
-hits at tt = 6, row = 3, col = 10, fadc chan=33
-hits at tt = 7, row = 3, col = 10, fadc chan=33
-row = 3 hits time = 10000011
-TRIG_MULTI: row = 3 hits time = 10000011
-Disc: pre_t = 11000001
-Disc: cur_t = 10000011
-hits at tt = 0, row = 3, col = 10, fadc chan=33
-hits at tt = 6, row = 3, col = 11, fadc chan=34
-hits at tt = 7, row = 3, col = 11, fadc chan=34
-row = 3 hits time = 10000011
-TRIG_MULTI: row = 3 hits time = 10000011
-Disc: pre_t = 11000001
-Disc: cur_t = 10000011
-hits at tt = 0, row = 3, col = 11, fadc chan=34
-hits at tt = 6, row = 3, col = 12, fadc chan=35
-hits at tt = 7, row = 3, col = 12, fadc chan=35
-row = 3 hits time = 10000011
-TRIG_MULTI: row = 3 hits time = 10000011
-Disc: pre_t = 11000001
-Disc: cur_t = 10000011
-hits at tt = 0, row = 3, col = 12, fadc chan=35
-hits at tt = 6, row = 4, col = 1, fadc chan=36
-hits at tt = 7, row = 4, col = 1, fadc chan=36
-row = 3 hits time = 10000000
-row = 4 hits time = 00000011
-TRIG_MULTI: row = 3 hits time = 10000000
-TRIG_MULTI: row = 4 hits time = 00000011
-Disc: pre_t = 11000001
-Disc: cur_t = 10000011
-hits at tt = 0, row = 4, col = 1, fadc chan=36
-hits at tt = 6, row = 4, col = 2, fadc chan=37
-hits at tt = 7, row = 4, col = 2, fadc chan=37
-row = 4 hits time = 10000011
-TRIG_MULTI: row = 4 hits time = 10000011
-Disc: pre_t = 11000001
-Disc: cur_t = 10000011
-hits at tt = 0, row = 4, col = 2, fadc chan=37
-hits at tt = 6, row = 4, col = 3, fadc chan=38
-hits at tt = 7, row = 4, col = 3, fadc chan=38
-row = 4 hits time = 10000011
-TRIG_MULTI: row = 4 hits time = 10000011
-Disc: pre_t = 11000001
-Disc: cur_t = 10000011
-hits at tt = 0, row = 4, col = 3, fadc chan=38
-hits at tt = 6, row = 4, col = 4, fadc chan=39
-hits at tt = 7, row = 4, col = 4, fadc chan=39
-row = 4 hits time = 10000011
-TRIG_MULTI: row = 4 hits time = 10000011
-Disc: pre_t = 11000001
-Disc: cur_t = 10000011
-hits at tt = 0, row = 4, col = 4, fadc chan=39
-hits at tt = 6, row = 4, col = 5, fadc chan=40
-hits at tt = 7, row = 4, col = 5, fadc chan=40
-row = 4 hits time = 10000011
-TRIG_MULTI: row = 4 hits time = 10000011
-Disc: pre_t = 11000001
-Disc: cur_t = 10000011
-hits at tt = 0, row = 4, col = 5, fadc chan=40
-hits at tt = 6, row = 4, col = 6, fadc chan=41
-hits at tt = 7, row = 4, col = 6, fadc chan=41
-row = 4 hits time = 10000011
-TRIG_MULTI: row = 4 hits time = 10000011
-Disc: pre_t = 11000001
-Disc: cur_t = 10000011
-hits at tt = 0, row = 4, col = 6, fadc chan=41
-hits at tt = 6, row = 4, col = 7, fadc chan=42
-hits at tt = 7, row = 4, col = 7, fadc chan=42
-row = 4 hits time = 10000011
-TRIG_MULTI: row = 4 hits time = 10000011
-Disc: pre_t = 11000001
-Disc: cur_t = 10000011
-hits at tt = 0, row = 4, col = 7, fadc chan=42
-hits at tt = 6, row = 4, col = 8, fadc chan=43
-hits at tt = 7, row = 4, col = 8, fadc chan=43
-row = 4 hits time = 10000011
-TRIG_MULTI: row = 4 hits time = 10000011
-Disc: pre_t = 11000001
-Disc: cur_t = 10000011
-hits at tt = 0, row = 4, col = 8, fadc chan=43
-hits at tt = 6, row = 4, col = 9, fadc chan=44
-hits at tt = 7, row = 4, col = 9, fadc chan=44
-row = 4 hits time = 10000011
-TRIG_MULTI: row = 4 hits time = 10000011
-Disc: pre_t = 11000001
-Disc: cur_t = 10000011
-hits at tt = 0, row = 4, col = 9, fadc chan=44
-hits at tt = 6, row = 4, col = 10, fadc chan=45
-hits at tt = 7, row = 4, col = 10, fadc chan=45
-row = 4 hits time = 10000011
-TRIG_MULTI: row = 4 hits time = 10000011
-Disc: pre_t = 11000001
-Disc: cur_t = 10000011
-hits at tt = 0, row = 4, col = 10, fadc chan=45
-hits at tt = 6, row = 4, col = 11, fadc chan=46
-hits at tt = 7, row = 4, col = 11, fadc chan=46
-row = 4 hits time = 10000011
-TRIG_MULTI: row = 4 hits time = 10000011
-Disc: pre_t = 11000001
-Disc: cur_t = 10000011
-hits at tt = 0, row = 4, col = 11, fadc chan=46
-hits at tt = 6, row = 4, col = 12, fadc chan=47
-hits at tt = 7, row = 4, col = 12, fadc chan=47
-row = 4 hits time = 10000011
-TRIG_MULTI: row = 4 hits time = 10000011
-Disc: pre_t = 11000001
-Disc: cur_t = 10000011
-hits at tt = 0, row = 4, col = 12, fadc chan=47
-hits at tt = 6, row = 4, col = 13, fadc chan=48
-hits at tt = 7, row = 4, col = 13, fadc chan=48
-row = 4 hits time = 10000011
-TRIG_MULTI: row = 4 hits time = 10000011
-Disc: pre_t = 11000001
-Disc: cur_t = 10000011
-hits at tt = 0, row = 4, col = 13, fadc chan=48
-hits at tt = 6, row = 4, col = 14, fadc chan=49
-hits at tt = 7, row = 4, col = 14, fadc chan=49
-row = 4 hits time = 10000011
-TRIG_MULTI: row = 4 hits time = 10000011
-Disc: pre_t = 11000001
-Disc: cur_t = 10000011
-hits at tt = 0, row = 4, col = 14, fadc chan=49
-hits at tt = 6, row = 4, col = 15, fadc chan=50
-hits at tt = 7, row = 4, col = 15, fadc chan=50
-row = 4 hits time = 10000011
-TRIG_MULTI: row = 4 hits time = 10000011
-Disc: pre_t = 11000001
-Disc: cur_t = 10000011
-hits at tt = 0, row = 4, col = 15, fadc chan=50
-hits at tt = 6, row = 4, col = 16, fadc chan=51
-hits at tt = 7, row = 4, col = 16, fadc chan=51
-row = 4 hits time = 10000011
-TRIG_MULTI: row = 4 hits time = 10000011
-Disc: pre_t = 11000001
-Disc: cur_t = 10000011
-hits at tt = 0, row = 4, col = 16, fadc chan=51
-hits at tt = 6, row = 4, col = 17, fadc chan=52
-hits at tt = 7, row = 4, col = 17, fadc chan=52
-row = 4 hits time = 10000011
-TRIG_MULTI: row = 4 hits time = 10000011
-Disc: pre_t = 11000001
-Disc: cur_t = 10000011
-hits at tt = 0, row = 4, col = 17, fadc chan=52
-hits at tt = 6, row = 4, col = 18, fadc chan=53
-hits at tt = 7, row = 4, col = 18, fadc chan=53
-row = 4 hits time = 10000011
-TRIG_MULTI: row = 4 hits time = 10000011
-Disc: pre_t = 11000001
-Disc: cur_t = 10000011
-Total 54 frames
-Trigger at frame 0: t=6
-Trigger at frame 1: t=6
-Trigger at frame 2: t=6
-Trigger at frame 3: t=6
-Trigger at frame 4: t=6
-Trigger at frame 5: t=6
-Trigger at frame 6: t=6
-Trigger at frame 7: t=6
-Trigger at frame 8: t=6
-Trigger at frame 9: t=6
-Trigger at frame 10: t=6
-Trigger at frame 11: t=6
-Trigger at frame 12: t=6
-Trigger at frame 13: t=6
-Trigger at frame 14: t=6
-Trigger at frame 15: t=6
-Trigger at frame 16: t=6
-Trigger at frame 17: t=6
-Trigger at frame 18: t=6
-Trigger at frame 19: t=6
-Trigger at frame 20: t=6
-Trigger at frame 21: t=6
-Trigger at frame 22: t=6
-Trigger at frame 23: t=6
-Trigger at frame 24: t=6
-Trigger at frame 25: t=6
-Trigger at frame 26: t=6
-Trigger at frame 27: t=6
-Trigger at frame 28: t=6
-Trigger at frame 29: t=6
-Trigger at frame 30: t=6
-Trigger at frame 31: t=6
-Trigger at frame 32: t=6
-Trigger at frame 33: t=6
-Trigger at frame 34: t=6
-Trigger at frame 35: t=6
-Trigger at frame 36: t=6
-Trigger at frame 37: t=6
-Trigger at frame 38: t=6
-Trigger at frame 39: t=6
-Trigger at frame 40: t=6
-Trigger at frame 41: t=6
-Trigger at frame 42: t=6
-Trigger at frame 43: t=6
-Trigger at frame 44: t=6
-Trigger at frame 45: t=6
-Trigger at frame 46: t=6
-Trigger at frame 47: t=6
-Trigger at frame 48: t=6
-Trigger at frame 49: t=6
-Trigger at frame 50: t=6
-Trigger at frame 51: t=6
-Trigger at frame 52: t=6
-Trigger at frame 53: t=6
-INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 54
+hits at tt = 0, row = 7, col = 1, fadc chan=90
+hits at tt = 0, row = 8, col = 1, fadc chan=111
+hits at tt = 0, row = 9, col = 1, fadc chan=132
+hits at tt = 1, row = 1, col = 1, fadc chan=0
+hits at tt = 1, row = 2, col = 1, fadc chan=12
+hits at tt = 1, row = 3, col = 1, fadc chan=24
+hits at tt = 1, row = 7, col = 1, fadc chan=90
+hits at tt = 1, row = 8, col = 1, fadc chan=111
+hits at tt = 1, row = 9, col = 1, fadc chan=132
+hits at tt = 2, row = 3, col = 1, fadc chan=24
+hits at tt = 2, row = 7, col = 1, fadc chan=90
+hits at tt = 2, row = 8, col = 1, fadc chan=111
+hits at tt = 2, row = 9, col = 1, fadc chan=132
+hits at tt = 3, row = 7, col = 1, fadc chan=90
+hits at tt = 3, row = 8, col = 1, fadc chan=111
+hits at tt = 3, row = 9, col = 1, fadc chan=132
+row = 1 hits time = 11000000
+row = 2 hits time = 11000000
+row = 3 hits time = 11100000
+row = 7 hits time = 11110000
+row = 8 hits time = 11110000
+row = 9 hits time = 11110000
+TRIG_MULTI: row = 1 hits time = 11000000
+TRIG_MULTI: row = 2 hits time = 11000000
+TRIG_MULTI: row = 3 hits time = 11100000
+TRIG_MULTI: row = 7 hits time = 11110000
+TRIG_MULTI: row = 8 hits time = 11110000
+TRIG_MULTI: row = 9 hits time = 11110000
+Disc: pre_t = 11111000
+Disc: cur_t = 11110000
+Total 3 frames
+Trigger at frame 1: t=7
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 3
 INFO: [SIM 1] CSim done with 0 errors.
 INFO: [SIM 3] *************** CSIM finish ***************
