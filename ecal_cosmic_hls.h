@@ -4,10 +4,41 @@
 #include <ap_int.h>
 #include <hls_stream.h>
 
+#ifdef CRATE1
 #define NFADCCHAN 216
 #define NDETCHAN 216
-#define NCOL 27
+#define NCOL 21
 #define NROW 12
+#endif
+
+#ifdef CRATE2
+#define NFADCCHAN 225
+#define NDETCHAN 225
+#define NCOL 27
+#define NROW 9
+#endif
+
+#if defined(CRATE3) || defined(CRATE4) || defined(CRATE5)
+#define NFADCCHAN 243
+#define NDETCHAN 243
+#define NCOL 27
+#define NROW 9
+#endif
+
+#ifdef CRATE6
+#define NFADCCHAN 234
+#define NDETCHAN 234
+#define NCOL 27
+#define NROW 9
+#endif
+
+#ifdef CRATE7
+#define NFADCCHAN 252
+#define NDETCHAN 252
+#define NCOL 24
+#define NROW 12
+#endif
+
 
 typedef ap_uint<13> TYPE_E;
 typedef ap_uint<3> TYPE_T;
