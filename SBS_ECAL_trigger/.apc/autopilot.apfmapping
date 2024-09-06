@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
-  <source>
-    <originFiles name="ecal_cosmic_hls.cpp" path="/daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/ecal_cosmic_hls.cpp"/>
-  </source>
-  <testbench>
-    <originFiles name="ecal_cosmic_hls_tb.cpp" path="/daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/ecal_cosmic_hls_tb.cpp"/>
-  </testbench>
-</autopilotfilemapping:AutoPilotFileMapping>
