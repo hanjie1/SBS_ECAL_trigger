@@ -1,0 +1,49 @@
+{
+  "0": {
+    "basicblocks": 3457,
+    "calls": "1 2",
+    "file": "ecal_cosmic_hls.cpp",
+    "fileloc": 33,
+    "instructions": 32178,
+    "loads": {
+      "G": 2161,
+      "L": 89
+    },
+    "name": "ecal_cosmic_hls",
+    "stores": {
+      "G": 1945,
+      "L": 103
+    },
+    "total_instructions": 32873
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "ecal_cosmic_hls.cpp",
+    "fileloc": 117,
+    "instructions": 595,
+    "loads": {
+      "L": 13
+    },
+    "name": "Trig_multiplicity",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 595
+  },
+  "2": {
+    "basicblocks": 15,
+    "calls": "",
+    "file": "ecal_cosmic_hls.cpp",
+    "fileloc": 150,
+    "instructions": 100,
+    "loads": {
+      "L": 2
+    },
+    "name": "Disc",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 100
+  }
+}

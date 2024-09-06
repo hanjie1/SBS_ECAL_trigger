@@ -9,7 +9,7 @@ int main(int argc, char *argv[])
 {
 
   TYPE_T hit_dt = 3;
-  TYPE_ROWTHRESHOLD row_threshold = 3;
+  TYPE_ROWTHRESHOLD row_threshold = 1;
   hls::stream<fadc_hits_vxs> s_fadc_hits_vxs;
   hls::stream<trigger_t> s_trigger_t;
 

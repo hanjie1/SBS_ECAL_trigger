@@ -1,6 +1,6 @@
 INFO: [SIM 2] *************** CSIM start ***************
 INFO: [SIM 4] CSIM will launch GCC as the compiler.
-   Compiling ../../../../ecal_cosmic_hls_tb.cpp in debug mode
+   Compiling ../../../../ecal_cosmic_hls.cpp in debug mode
    Generating csim.exe
 open file: /daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/cosmic1/frame0.txt
 0 216
@@ -25,8 +25,8 @@ row = 3 hits time = 00000001
 TRIG_MULTI: row = 1 hits time = 01111011
 TRIG_MULTI: row = 2 hits time = 00000011
 TRIG_MULTI: row = 3 hits time = 00000001
-Disc: pre_t = 00000000
-Disc: cur_t = 00000001
+Disc: pre_t = 00111101
+Disc: cur_t = 01111011
 hits at tt = 0, row = 1, col = 1, fadc chan=0
 hits at tt = 0, row = 2, col = 1, fadc chan=12
 hits at tt = 0, row = 3, col = 1, fadc chan=24
@@ -61,7 +61,8 @@ TRIG_MULTI: row = 9 hits time = 11110000
 Disc: pre_t = 11111000
 Disc: cur_t = 11110000
 Total 3 frames
-Trigger at frame 1: t=7
+Trigger at frame 1: t=1
+Trigger at frame 1: t=6
 INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 3
 INFO: [SIM 1] CSim done with 0 errors.
 INFO: [SIM 3] *************** CSIM finish ***************

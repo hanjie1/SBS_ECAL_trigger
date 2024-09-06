@@ -1,0 +1,111 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/SBS_ECAL_trigger/allcrates/allcrates_script.tcl:48:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="ecal_cosmic_hls" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=ecal_cosmic_hls" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="ecal_cosmic_hls.cpp:42:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="ecal_cosmic_hls" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_fifo port=s_fadc_hits_vxs" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="ecal_cosmic_hls.cpp:43:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="ecal_cosmic_hls" ARG_PragmaIsValid="1" ARG_PragmaOptions="ap_fifo port=s_trigger_t" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="ecal_cosmic_hls.cpp:45:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="ecal_cosmic_hls" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1 style=flp" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="ecal_cosmic_hls.cpp:111:21" msg_body="Loop 'VITIS_LOOP_111_5' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_111_5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="ecal_cosmic_hls.cpp:68:20" msg_body="Loop 'VITIS_LOOP_68_3' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_68_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="ecal_cosmic_hls.cpp:69:23" msg_body="Loop 'VITIS_LOOP_69_4' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_69_4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="ecal_cosmic_hls.cpp:67:31" msg_body="Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="anonymous"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="ecal_cosmic_hls.cpp:56:20" msg_body="Loop 'VITIS_LOOP_56_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_56_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="ecal_cosmic_hls.cpp:59:23" msg_body="Loop 'VITIS_LOOP_59_2' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_59_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="ecal_cosmic_hls.cpp:188:21" msg_body="Loop 'VITIS_LOOP_188_3' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_188_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="ecal_cosmic_hls.cpp:160:21" msg_body="Loop 'VITIS_LOOP_160_2' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_160_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="ecal_cosmic_hls.cpp:157:21" msg_body="Loop 'VITIS_LOOP_157_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_157_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="ecal_cosmic_hls.cpp:139:21" msg_body="Loop 'VITIS_LOOP_139_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_139_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="ecal_cosmic_hls.cpp:140:24" msg_body="Loop 'VITIS_LOOP_140_2' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_140_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="ecal_cosmic_hls.cpp:121:24" msg_body="Loop 'anonymous' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="anonymous"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="ecal_cosmic_hls.cpp:40:0" msg_body="Unrolling loop 'VITIS_LOOP_111_5' (ecal_cosmic_hls.cpp:111:21) in function 'ecal_cosmic_hls' completely with a factor of 252">
+        <args Factor="252" LoopLoc="ecal_cosmic_hls.cpp:111:21" LoopName="VITIS_LOOP_111_5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="ecal_cosmic_hls.cpp:40:0" msg_body="Unrolling loop 'VITIS_LOOP_68_3' (ecal_cosmic_hls.cpp:68:20) in function 'ecal_cosmic_hls' completely with a factor of 8">
+        <args Factor="8" LoopLoc="ecal_cosmic_hls.cpp:68:20" LoopName="VITIS_LOOP_68_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="ecal_cosmic_hls.cpp:40:0" msg_body="Unrolling loop 'VITIS_LOOP_69_4' (ecal_cosmic_hls.cpp:69:23) in function 'ecal_cosmic_hls' completely with a factor of 252">
+        <args Factor="252" LoopLoc="ecal_cosmic_hls.cpp:69:23" LoopName="VITIS_LOOP_69_4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="ecal_cosmic_hls.cpp:40:0" msg_body="Unrolling loop 'anonymous' (ecal_cosmic_hls.cpp:67:31) in function 'ecal_cosmic_hls' completely with a factor of 11">
+        <args Factor="11" LoopLoc="ecal_cosmic_hls.cpp:67:31" LoopName="anonymous"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="ecal_cosmic_hls.cpp:40:0" msg_body="Unrolling loop 'anonymous' () in function 'ecal_cosmic_hls' completely with a factor of 1">
+        <args Factor="1" LoopName="anonymous"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="ecal_cosmic_hls.cpp:40:0" msg_body="Unrolling loop 'VITIS_LOOP_56_1' (ecal_cosmic_hls.cpp:56:20) in function 'ecal_cosmic_hls' completely with a factor of 252">
+        <args Factor="252" LoopLoc="ecal_cosmic_hls.cpp:56:20" LoopName="VITIS_LOOP_56_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="ecal_cosmic_hls.cpp:40:0" msg_body="Unrolling loop 'VITIS_LOOP_59_2' (ecal_cosmic_hls.cpp:59:23) in function 'ecal_cosmic_hls' completely with a factor of 8">
+        <args Factor="8" LoopLoc="ecal_cosmic_hls.cpp:59:23" LoopName="VITIS_LOOP_59_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="ecal_cosmic_hls.cpp:150:0" msg_body="Unrolling loop 'VITIS_LOOP_188_3' (ecal_cosmic_hls.cpp:188:21) in function 'Disc' completely with a factor of 8">
+        <args Factor="8" LoopLoc="ecal_cosmic_hls.cpp:188:21" LoopName="VITIS_LOOP_188_3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="ecal_cosmic_hls.cpp:150:0" msg_body="Unrolling loop 'VITIS_LOOP_160_2' (ecal_cosmic_hls.cpp:160:21) in function 'Disc' completely with a factor of 8">
+        <args Factor="8" LoopLoc="ecal_cosmic_hls.cpp:160:21" LoopName="VITIS_LOOP_160_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="ecal_cosmic_hls.cpp:150:0" msg_body="Unrolling loop 'VITIS_LOOP_157_1' (ecal_cosmic_hls.cpp:157:21) in function 'Disc' completely with a factor of 7">
+        <args Factor="7" LoopLoc="ecal_cosmic_hls.cpp:157:21" LoopName="VITIS_LOOP_157_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="ecal_cosmic_hls.cpp:117:0" msg_body="Unrolling loop 'VITIS_LOOP_139_1' (ecal_cosmic_hls.cpp:139:21) in function 'Trig_multiplicity' completely with a factor of 8">
+        <args Factor="8" LoopLoc="ecal_cosmic_hls.cpp:139:21" LoopName="VITIS_LOOP_139_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="ecal_cosmic_hls.cpp:117:0" msg_body="Unrolling loop 'VITIS_LOOP_140_2' (ecal_cosmic_hls.cpp:140:24) in function 'Trig_multiplicity' completely with a factor of 12">
+        <args Factor="12" LoopLoc="ecal_cosmic_hls.cpp:140:24" LoopName="VITIS_LOOP_140_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="ecal_cosmic_hls.cpp:117:0" msg_body="Unrolling loop 'anonymous' (ecal_cosmic_hls.cpp:121:24) in function 'Trig_multiplicity' completely with a factor of 7">
+        <args Factor="7" LoopLoc="ecal_cosmic_hls.cpp:121:24" LoopName="anonymous"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="ecal_cosmic_hls.cpp:117:0" msg_body="Unrolling loop 'anonymous' () in function 'Trig_multiplicity' completely with a factor of 1">
+        <args Factor="1" LoopName="anonymous"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="ecal_cosmic_hls.cpp:40:0" msg_body="Aggregating fifo (hls::stream) variable 's_fadc_hits_vxs' with compact=bit mode in 4032-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="4032" HwTyName="fifo (hls::stream)" Name="s_fadc_hits_vxs"/>
+    </msg>
+    <msg msg_groups="AUTOMATION" msg_id="214-364" msg_severity="INFO" msg_loc="ecal_cosmic_hls.cpp:97:20" msg_body="Automatically inlining function 'Trig_multiplicity(ap_uint&lt;8&gt;*, ap_uint&lt;4&gt;)' to improve effectiveness of pipeline pragma in function 'ecal_cosmic_hls(ap_uint&lt;3&gt;, ap_uint&lt;4&gt;, hls::stream&lt;fadc_hits_vxs, 0&gt;&amp;, hls::stream&lt;trigger_t, 0&gt;&amp;)'">
+        <args Callee="Trig_multiplicity(ap_uint&lt;8&gt;*, ap_uint&lt;4&gt;)" Callee-DebugLoc="File ecal_cosmic_hls.cpp Line 117 Column 0" Caller="ecal_cosmic_hls(ap_uint&lt;3&gt;, ap_uint&lt;4&gt;, hls::stream&lt;fadc_hits_vxs, 0&gt;&amp;, hls::stream&lt;trigger_t, 0&gt;&amp;)" Caller-DebugLoc="File ecal_cosmic_hls.cpp Line 40 Column 0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION" msg_id="214-364" msg_severity="INFO" msg_loc="ecal_cosmic_hls.cpp:103:12" msg_body="Automatically inlining function 'Disc(ap_uint&lt;8&gt;, ap_uint&lt;1&gt;)' to improve effectiveness of pipeline pragma in function 'ecal_cosmic_hls(ap_uint&lt;3&gt;, ap_uint&lt;4&gt;, hls::stream&lt;fadc_hits_vxs, 0&gt;&amp;, hls::stream&lt;trigger_t, 0&gt;&amp;)'">
+        <args Callee="Disc(ap_uint&lt;8&gt;, ap_uint&lt;1&gt;)" Callee-DebugLoc="File ecal_cosmic_hls.cpp Line 150 Column 0" Caller="ecal_cosmic_hls(ap_uint&lt;3&gt;, ap_uint&lt;4&gt;, hls::stream&lt;fadc_hits_vxs, 0&gt;&amp;, hls::stream&lt;trigger_t, 0&gt;&amp;)" Caller-DebugLoc="File ecal_cosmic_hls.cpp Line 40 Column 0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="ecal_cosmic_hls.cpp:48:0" msg_body="array_partition dim=1 type=complete  variable=_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS3_I9trigger_tLi0EEEE16fadc_hits_stream 1 ecal_cosmic_hls ecal_cosmic_hls.cpp:48:0 ecal_cosmic_hls.cpp:45:9ecal_cosmic_hls(ap_uint&lt;3&gt;, ap_uint&lt;4&gt;, hls::stream&lt;fadc_hits_vxs, 0&gt;&amp;, hls::stream&lt;trigger_t, 0&gt;&amp;)::fadc_hits_stream">
+        <args PragmaFunction="ecal_cosmic_hls" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS3_I9trigger_tLi0EEEE16fadc_hits_stream" PragmaSrcLoc="ecal_cosmic_hls.cpp:45:9" PragmaSrcLoc-DebugLoc="File ecal_cosmic_hls.cpp Line 45 Column 9" PragmaType="array_partition" VarName="ecal_cosmic_hls(ap_uint&lt;3&gt;, ap_uint&lt;4&gt;, hls::stream&lt;fadc_hits_vxs, 0&gt;&amp;, hls::stream&lt;trigger_t, 0&gt;&amp;)::fadc_hits_stream" varLoc="ecal_cosmic_hls.cpp:48:0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="ecal_cosmic_hls.cpp:45:9" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'ecal_cosmic_hls(ap_uint&lt;3&gt;, ap_uint&lt;4&gt;, hls::stream&lt;fadc_hits_vxs, 0&gt;&amp;, hls::stream&lt;trigger_t, 0&gt;&amp;)::fadc_hits_stream' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="ecal_cosmic_hls(ap_uint&lt;3&gt;, ap_uint&lt;4&gt;, hls::stream&lt;fadc_hits_vxs, 0&gt;&amp;, hls::stream&lt;trigger_t, 0&gt;&amp;)::fadc_hits_stream" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="ecal_cosmic_hls.cpp:48:0" msg_body="Applying array_partition to '_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS3_I9trigger_tLi0EEEE16fadc_hits_stream': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS3_I9trigger_tLi0EEEE16fadc_hits_stream"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

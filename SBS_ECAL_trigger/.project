@@ -37,6 +37,31 @@
 			<location>/daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/SBS_ECAL_trigger/.apc/.tb</location>
 		</link>
 		<link>
+			<name>crate1/constraints</name>
+			<type>2</type>
+			<location>/daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/SBS_ECAL_trigger/crate1/.tcls</location>
+		</link>
+		<link>
+			<name>crate2/constraints</name>
+			<type>2</type>
+			<location>/daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/SBS_ECAL_trigger/crate2/.tcls</location>
+		</link>
+		<link>
+			<name>crate3_4_5/constraints</name>
+			<type>2</type>
+			<location>/daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/SBS_ECAL_trigger/crate3_4_5/.tcls</location>
+		</link>
+		<link>
+			<name>crate6/constraints</name>
+			<type>2</type>
+			<location>/daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/SBS_ECAL_trigger/crate6/.tcls</location>
+		</link>
+		<link>
+			<name>crate7/constraints</name>
+			<type>2</type>
+			<location>/daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/SBS_ECAL_trigger/crate7/.tcls</location>
+		</link>
+		<link>
 			<name>solution1/constraints</name>
 			<type>2</type>
 			<location>/daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/SBS_ECAL_trigger/solution1/.tcls</location>
@@ -50,6 +75,81 @@
 			<name>testbench/ecal_cosmic_hls_tb.cpp</name>
 			<type>1</type>
 			<location>/daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/ecal_cosmic_hls_tb.cpp</location>
+		</link>
+		<link>
+			<name>crate1/constraints/.xml.directive</name>
+			<type>1</type>
+			<location>/daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/SBS_ECAL_trigger/crate1/crate1.directive</location>
+		</link>
+		<link>
+			<name>crate1/constraints/directives.tcl</name>
+			<type>1</type>
+			<location>/daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/SBS_ECAL_trigger/crate1/directives.tcl</location>
+		</link>
+		<link>
+			<name>crate1/constraints/script.tcl</name>
+			<type>1</type>
+			<location>/daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/SBS_ECAL_trigger/crate1/script.tcl</location>
+		</link>
+		<link>
+			<name>crate2/constraints/.xml.directive</name>
+			<type>1</type>
+			<location>/daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/SBS_ECAL_trigger/crate2/crate2.directive</location>
+		</link>
+		<link>
+			<name>crate2/constraints/directives.tcl</name>
+			<type>1</type>
+			<location>/daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/SBS_ECAL_trigger/crate2/directives.tcl</location>
+		</link>
+		<link>
+			<name>crate2/constraints/script.tcl</name>
+			<type>1</type>
+			<location>/daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/SBS_ECAL_trigger/crate2/script.tcl</location>
+		</link>
+		<link>
+			<name>crate3_4_5/constraints/.xml.directive</name>
+			<type>1</type>
+			<location>/daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/SBS_ECAL_trigger/crate3_4_5/crate3_4_5.directive</location>
+		</link>
+		<link>
+			<name>crate3_4_5/constraints/directives.tcl</name>
+			<type>1</type>
+			<location>/daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/SBS_ECAL_trigger/crate3_4_5/directives.tcl</location>
+		</link>
+		<link>
+			<name>crate3_4_5/constraints/script.tcl</name>
+			<type>1</type>
+			<location>/daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/SBS_ECAL_trigger/crate3_4_5/script.tcl</location>
+		</link>
+		<link>
+			<name>crate6/constraints/.xml.directive</name>
+			<type>1</type>
+			<location>/daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/SBS_ECAL_trigger/crate6/crate6.directive</location>
+		</link>
+		<link>
+			<name>crate6/constraints/directives.tcl</name>
+			<type>1</type>
+			<location>/daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/SBS_ECAL_trigger/crate6/directives.tcl</location>
+		</link>
+		<link>
+			<name>crate6/constraints/script.tcl</name>
+			<type>1</type>
+			<location>/daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/SBS_ECAL_trigger/crate6/script.tcl</location>
+		</link>
+		<link>
+			<name>crate7/constraints/.xml.directive</name>
+			<type>1</type>
+			<location>/daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/SBS_ECAL_trigger/crate7/crate7.directive</location>
+		</link>
+		<link>
+			<name>crate7/constraints/directives.tcl</name>
+			<type>1</type>
+			<location>/daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/SBS_ECAL_trigger/crate7/directives.tcl</location>
+		</link>
+		<link>
+			<name>crate7/constraints/script.tcl</name>
+			<type>1</type>
+			<location>/daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/SBS_ECAL_trigger/crate7/script.tcl</location>
 		</link>
 		<link>
 			<name>solution1/constraints/.xml.directive</name>

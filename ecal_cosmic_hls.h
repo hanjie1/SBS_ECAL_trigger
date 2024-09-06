@@ -1,8 +1,10 @@
-#ifndef ecal_cosmic_h
-#define ecal_cosmic_h
+#ifndef ecal_cosmic_hls_h
+#define ecal_cosmic_hls_h
 
 #include <ap_int.h>
 #include <hls_stream.h>
+
+#define CRATE1
 
 #ifdef CRATE1
 #define NFADCCHAN 216
@@ -12,13 +14,13 @@
 #endif
 
 #ifdef CRATE2
-#define NFADCCHAN 225
+#define NFADCCHAN 10
 #define NDETCHAN 225
 #define NCOL 27
 #define NROW 9
 #endif
 
-#if defined(CRATE3) || defined(CRATE4) || defined(CRATE5)
+#ifdef CRATE3_4_5
 #define NFADCCHAN 243
 #define NDETCHAN 243
 #define NCOL 27

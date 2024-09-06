@@ -1,0 +1,183 @@
+
+
+================================================================
+== Synthesis Summary Report of 'ecal_cosmic_hls'
+================================================================
++ General Information: 
+    * Date:           Fri Sep  6 16:15:07 2024
+    * Version:        2023.2 (Build 4023990 on Oct 11 2023)
+    * Project:        SBS_ECAL_trigger
+    * Solution:       crate2 (Vivado IP Flow Target)
+    * Product family: virtex7
+    * Target device:  xc7vx550t-ffg1927-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +-------------------+------+------+---------+--------+----------+---------+------+----------+------+----+----------+-----------+-----+
+    |      Modules      | Issue|      | Latency | Latency| Iteration|         | Trip |          |      |    |          |           |     |
+    |      & Loops      | Type | Slack| (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined| BRAM | DSP|    FF    |    LUT    | URAM|
+    +-------------------+------+------+---------+--------+----------+---------+------+----------+------+----+----------+-----------+-----+
+    |+ ecal_cosmic_hls  |     -|  3.02|        1|  32.000|         -|        1|     -|  yes(flp)|     -|   -|  92 (~0%)|  3480 (1%)|    -|
+    +-------------------+------+------+---------+--------+----------+---------+------+----------+------+----+----------+-----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* AP_FIFO
++-----------------+-----------+------------+
+| Interface       | Direction | Data Width |
++-----------------+-----------+------------+
+| s_fadc_hits_vxs | out       | 160        |
+| s_trigger_t     | out       | 8          |
++-----------------+-----------+------------+
+
+* Other Ports
++---------------+---------+-----------+----------+
+| Port          | Mode    | Direction | Bitwidth |
++---------------+---------+-----------+----------+
+| hit_width     | ap_none | in        | 3        |
+| row_threshold | ap_none | in        | 4        |
++---------------+---------+-----------+----------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------------------------------+
+| Interface | Type       | Ports                             |
++-----------+------------+-----------------------------------+
+| ap_clk    | clock      | ap_clk                            |
+| ap_rst    | reset      | ap_rst                            |
+| ap_ctrl   | ap_ctrl_hs | ap_done ap_idle ap_ready ap_start |
++-----------+------------+-----------------------------------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++-----------------+-----------+---------------------------+
+| Argument        | Direction | Datatype                  |
++-----------------+-----------+---------------------------+
+| hit_width       | in        | ap_uint<3>                |
+| row_threshold   | in        | ap_uint<4>                |
+| s_fadc_hits_vxs | in        | stream<fadc_hits_vxs, 0>& |
+| s_trigger_t     | out       | stream<trigger_t, 0>&     |
++-----------------+-----------+---------------------------+
+
+* SW-to-HW Mapping
++-----------------+-----------------+-----------+
+| Argument        | HW Interface    | HW Type   |
++-----------------+-----------------+-----------+
+| hit_width       | hit_width       | port      |
+| row_threshold   | row_threshold   | port      |
+| s_fadc_hits_vxs | s_fadc_hits_vxs | interface |
+| s_trigger_t     | s_trigger_t     | interface |
++-----------------+-----------------+-----------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++--------------------------+-----+--------+-------------+-----+--------+---------+
+| Name                     | DSP | Pragma | Variable    | Op  | Impl   | Latency |
++--------------------------+-----+--------+-------------+-----+--------+---------+
+| + ecal_cosmic_hls        | 0   |        |             |     |        |         |
+|   add_ln61_fu_529_p2     |     |        | add_ln61    | add | fabric | 0       |
+|   add_ln61_1_fu_591_p2   |     |        | add_ln61_1  | add | fabric | 0       |
+|   add_ln61_2_fu_643_p2   |     |        | add_ln61_2  | add | fabric | 0       |
+|   add_ln61_3_fu_697_p2   |     |        | add_ln61_3  | add | fabric | 0       |
+|   add_ln61_4_fu_749_p2   |     |        | add_ln61_4  | add | fabric | 0       |
+|   add_ln61_5_fu_801_p2   |     |        | add_ln61_5  | add | fabric | 0       |
+|   add_ln61_6_fu_853_p2   |     |        | add_ln61_6  | add | fabric | 0       |
+|   add_ln61_7_fu_959_p2   |     |        | add_ln61_7  | add | fabric | 0       |
+|   add_ln61_8_fu_1005_p2  |     |        | add_ln61_8  | add | fabric | 0       |
+|   add_ln61_9_fu_1051_p2  |     |        | add_ln61_9  | add | fabric | 0       |
+|   add_ln61_10_fu_1097_p2 |     |        | add_ln61_10 | add | fabric | 0       |
+|   add_ln61_11_fu_1143_p2 |     |        | add_ln61_11 | add | fabric | 0       |
+|   add_ln61_12_fu_1189_p2 |     |        | add_ln61_12 | add | fabric | 0       |
+|   add_ln61_13_fu_1235_p2 |     |        | add_ln61_13 | add | fabric | 0       |
+|   add_ln61_14_fu_1373_p2 |     |        | add_ln61_14 | add | fabric | 0       |
+|   add_ln61_15_fu_1419_p2 |     |        | add_ln61_15 | add | fabric | 0       |
+|   add_ln61_16_fu_1465_p2 |     |        | add_ln61_16 | add | fabric | 0       |
+|   add_ln61_17_fu_1511_p2 |     |        | add_ln61_17 | add | fabric | 0       |
+|   add_ln61_18_fu_1557_p2 |     |        | add_ln61_18 | add | fabric | 0       |
+|   add_ln61_19_fu_1603_p2 |     |        | add_ln61_19 | add | fabric | 0       |
+|   add_ln61_20_fu_1649_p2 |     |        | add_ln61_20 | add | fabric | 0       |
+|   add_ln61_21_fu_1787_p2 |     |        | add_ln61_21 | add | fabric | 0       |
+|   add_ln61_22_fu_1833_p2 |     |        | add_ln61_22 | add | fabric | 0       |
+|   add_ln61_23_fu_1879_p2 |     |        | add_ln61_23 | add | fabric | 0       |
+|   add_ln61_24_fu_1925_p2 |     |        | add_ln61_24 | add | fabric | 0       |
+|   add_ln61_25_fu_1971_p2 |     |        | add_ln61_25 | add | fabric | 0       |
+|   add_ln61_26_fu_2017_p2 |     |        | add_ln61_26 | add | fabric | 0       |
+|   add_ln61_27_fu_2063_p2 |     |        | add_ln61_27 | add | fabric | 0       |
+|   add_ln61_28_fu_2201_p2 |     |        | add_ln61_28 | add | fabric | 0       |
+|   add_ln61_29_fu_2247_p2 |     |        | add_ln61_29 | add | fabric | 0       |
+|   add_ln61_30_fu_2293_p2 |     |        | add_ln61_30 | add | fabric | 0       |
+|   add_ln61_31_fu_2339_p2 |     |        | add_ln61_31 | add | fabric | 0       |
+|   add_ln61_32_fu_2385_p2 |     |        | add_ln61_32 | add | fabric | 0       |
+|   add_ln61_33_fu_2431_p2 |     |        | add_ln61_33 | add | fabric | 0       |
+|   add_ln61_34_fu_2477_p2 |     |        | add_ln61_34 | add | fabric | 0       |
+|   add_ln61_35_fu_2615_p2 |     |        | add_ln61_35 | add | fabric | 0       |
+|   add_ln61_36_fu_2661_p2 |     |        | add_ln61_36 | add | fabric | 0       |
+|   add_ln61_37_fu_2707_p2 |     |        | add_ln61_37 | add | fabric | 0       |
+|   add_ln61_38_fu_2753_p2 |     |        | add_ln61_38 | add | fabric | 0       |
+|   add_ln61_39_fu_2799_p2 |     |        | add_ln61_39 | add | fabric | 0       |
+|   add_ln61_40_fu_2845_p2 |     |        | add_ln61_40 | add | fabric | 0       |
+|   add_ln61_41_fu_2891_p2 |     |        | add_ln61_41 | add | fabric | 0       |
+|   add_ln61_42_fu_3029_p2 |     |        | add_ln61_42 | add | fabric | 0       |
+|   add_ln61_43_fu_3075_p2 |     |        | add_ln61_43 | add | fabric | 0       |
+|   add_ln61_44_fu_3121_p2 |     |        | add_ln61_44 | add | fabric | 0       |
+|   add_ln61_45_fu_3167_p2 |     |        | add_ln61_45 | add | fabric | 0       |
+|   add_ln61_46_fu_3213_p2 |     |        | add_ln61_46 | add | fabric | 0       |
+|   add_ln61_47_fu_3259_p2 |     |        | add_ln61_47 | add | fabric | 0       |
+|   add_ln61_48_fu_3305_p2 |     |        | add_ln61_48 | add | fabric | 0       |
+|   add_ln61_49_fu_3443_p2 |     |        | add_ln61_49 | add | fabric | 0       |
+|   add_ln61_50_fu_3489_p2 |     |        | add_ln61_50 | add | fabric | 0       |
+|   add_ln61_51_fu_3535_p2 |     |        | add_ln61_51 | add | fabric | 0       |
+|   add_ln61_52_fu_3581_p2 |     |        | add_ln61_52 | add | fabric | 0       |
+|   add_ln61_53_fu_3627_p2 |     |        | add_ln61_53 | add | fabric | 0       |
+|   add_ln61_54_fu_3673_p2 |     |        | add_ln61_54 | add | fabric | 0       |
+|   add_ln61_55_fu_3719_p2 |     |        | add_ln61_55 | add | fabric | 0       |
+|   add_ln61_56_fu_3857_p2 |     |        | add_ln61_56 | add | fabric | 0       |
+|   add_ln61_57_fu_3903_p2 |     |        | add_ln61_57 | add | fabric | 0       |
+|   add_ln61_58_fu_3949_p2 |     |        | add_ln61_58 | add | fabric | 0       |
+|   add_ln61_59_fu_3995_p2 |     |        | add_ln61_59 | add | fabric | 0       |
+|   add_ln61_60_fu_4041_p2 |     |        | add_ln61_60 | add | fabric | 0       |
+|   add_ln61_61_fu_4087_p2 |     |        | add_ln61_61 | add | fabric | 0       |
+|   add_ln61_62_fu_4133_p2 |     |        | add_ln61_62 | add | fabric | 0       |
+|   add_ln61_63_fu_4271_p2 |     |        | add_ln61_63 | add | fabric | 0       |
+|   add_ln61_64_fu_4317_p2 |     |        | add_ln61_64 | add | fabric | 0       |
+|   add_ln61_65_fu_4363_p2 |     |        | add_ln61_65 | add | fabric | 0       |
+|   add_ln61_66_fu_4409_p2 |     |        | add_ln61_66 | add | fabric | 0       |
+|   add_ln61_67_fu_4455_p2 |     |        | add_ln61_67 | add | fabric | 0       |
+|   add_ln61_68_fu_4501_p2 |     |        | add_ln61_68 | add | fabric | 0       |
+|   add_ln61_69_fu_4547_p2 |     |        | add_ln61_69 | add | fabric | 0       |
++--------------------------+-----+--------+-------------+-----+--------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
+  No bind storage info in design
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------+------------------------------+------------------------------------------------------------+
+| Type      | Options                      | Location                                                   |
++-----------+------------------------------+------------------------------------------------------------+
+| interface | ap_fifo port=s_fadc_hits_vxs | ecal_cosmic_hls.cpp:42 in ecal_cosmic_hls, s_fadc_hits_vxs |
+| interface | ap_fifo port=s_trigger_t     | ecal_cosmic_hls.cpp:43 in ecal_cosmic_hls, s_trigger_t     |
+| pipeline  | II=1 style=flp               | ecal_cosmic_hls.cpp:45 in ecal_cosmic_hls                  |
++-----------+------------------------------+------------------------------------------------------------+
+
+* Inferred Pragmas
++---------------------------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+
+| Source Pragma                   | Inferred Pragma | Options                                                                                                                                              | Location                                                                                                                                          |
++---------------------------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+
+| pipeline ecal_cosmic_hls.cpp:45 | array_partition | dim=1 type=complete  variable=_ZZ15ecal_cosmic_hls7ap_uintILi3EES_ILi4EERN3hls6streamI13fadc_hits_vxsLi0EEERNS3_I9trigger_tLi0EEEE16fadc_hits_stream | variable ecal_cosmic_hls(ap_uint<3>, ap_uint<4>, hls::stream<fadc_hits_vxs, 0>&, hls::stream<trigger_t, 0>&)::fadc_hits_stream in ecal_cosmic_hls |
++---------------------------------+-----------------+------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------+
+
+

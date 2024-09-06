@@ -1,0 +1,17 @@
+{
+    "0": {
+        "name": "ecal_cosmic_hls",
+        "file": "ecal_cosmic_hls.cpp",
+        "fileloc": "33",
+        "instructions": "23478",
+        "total_instructions": "23478",
+        "calls": "",
+        "basicblocks": "1",
+        "loads": {
+            "G": "253"
+        },
+        "stores": {
+            "G": "253"
+        }
+    }
+}

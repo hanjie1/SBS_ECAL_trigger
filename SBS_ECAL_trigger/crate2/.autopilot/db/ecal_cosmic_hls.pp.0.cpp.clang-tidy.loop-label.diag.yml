@@ -1,0 +1,139 @@
+---
+MainSourceFile:  /daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/SBS_ECAL_trigger/crate2/.autopilot/db/ecal_cosmic_hls.pp.0.cpp
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1207_1:  '
+    FileOffset:      1207
+    FilePath:        /daqfs/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_int_base.h
+    Replacements:    
+      - FilePath:        /daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/SBS_ECAL_trigger/crate2/.autopilot/db/ecal_cosmic_hls.pp.0.cpp
+        Offset:          55411
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1207_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_676_1:  '
+    FileOffset:      676
+    FilePath:        /daqfs/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/SBS_ECAL_trigger/crate2/.autopilot/db/ecal_cosmic_hls.pp.0.cpp
+        Offset:          282819
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_676_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_690_1:  '
+    FileOffset:      690
+    FilePath:        /daqfs/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/SBS_ECAL_trigger/crate2/.autopilot/db/ecal_cosmic_hls.pp.0.cpp
+        Offset:          283283
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_690_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_704_1:  '
+    FileOffset:      704
+    FilePath:        /daqfs/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_int_ref.h
+    Replacements:    
+      - FilePath:        /daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/SBS_ECAL_trigger/crate2/.autopilot/db/ecal_cosmic_hls.pp.0.cpp
+        Offset:          283748
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_704_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1247_1:  '
+    FileOffset:      1247
+    FilePath:        /daqfs/Xilinx/Vitis_HLS/2023.2/common/technology/autopilot/etc/ap_fixed_base.h
+    Replacements:    
+      - FilePath:        /daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/SBS_ECAL_trigger/crate2/.autopilot/db/ecal_cosmic_hls.pp.0.cpp
+        Offset:          567135
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1247_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_56_1:  '
+    FileOffset:      56
+    FilePath:        ecal_cosmic_hls.cpp
+    Replacements:    
+      - FilePath:        /daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/SBS_ECAL_trigger/crate2/.autopilot/db/ecal_cosmic_hls.pp.0.cpp
+        Offset:          942508
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_56_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_59_2:  '
+    FileOffset:      59
+    FilePath:        ecal_cosmic_hls.cpp
+    Replacements:    
+      - FilePath:        /daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/SBS_ECAL_trigger/crate2/.autopilot/db/ecal_cosmic_hls.pp.0.cpp
+        Offset:          942629
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_59_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_68_3:  '
+    FileOffset:      68
+    FilePath:        ecal_cosmic_hls.cpp
+    Replacements:    
+      - FilePath:        /daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/SBS_ECAL_trigger/crate2/.autopilot/db/ecal_cosmic_hls.pp.0.cpp
+        Offset:          942820
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_68_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_69_4:  '
+    FileOffset:      69
+    FilePath:        ecal_cosmic_hls.cpp
+    Replacements:    
+      - FilePath:        /daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/SBS_ECAL_trigger/crate2/.autopilot/db/ecal_cosmic_hls.pp.0.cpp
+        Offset:          942848
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_69_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_111_5:  '
+    FileOffset:      111
+    FilePath:        ecal_cosmic_hls.cpp
+    Replacements:    
+      - FilePath:        /daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/SBS_ECAL_trigger/crate2/.autopilot/db/ecal_cosmic_hls.pp.0.cpp
+        Offset:          943325
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_111_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_139_1:  '
+    FileOffset:      139
+    FilePath:        ecal_cosmic_hls.cpp
+    Replacements:    
+      - FilePath:        /daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/SBS_ECAL_trigger/crate2/.autopilot/db/ecal_cosmic_hls.pp.0.cpp
+        Offset:          943608
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_139_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_140_2:  '
+    FileOffset:      140
+    FilePath:        ecal_cosmic_hls.cpp
+    Replacements:    
+      - FilePath:        /daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/SBS_ECAL_trigger/crate2/.autopilot/db/ecal_cosmic_hls.pp.0.cpp
+        Offset:          943636
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_140_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_157_1:  '
+    FileOffset:      157
+    FilePath:        ecal_cosmic_hls.cpp
+    Replacements:    
+      - FilePath:        /daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/SBS_ECAL_trigger/crate2/.autopilot/db/ecal_cosmic_hls.pp.0.cpp
+        Offset:          943924
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_157_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_160_2:  '
+    FileOffset:      160
+    FilePath:        ecal_cosmic_hls.cpp
+    Replacements:    
+      - FilePath:        /daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/SBS_ECAL_trigger/crate2/.autopilot/db/ecal_cosmic_hls.pp.0.cpp
+        Offset:          943982
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_160_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_188_3:  '
+    FileOffset:      188
+    FilePath:        ecal_cosmic_hls.cpp
+    Replacements:    
+      - FilePath:        /daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/SBS_ECAL_trigger/crate2/.autopilot/db/ecal_cosmic_hls.pp.0.cpp
+        Offset:          944087
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_188_3: '
+...
