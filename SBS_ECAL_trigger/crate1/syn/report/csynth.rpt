@@ -4,7 +4,7 @@
 == Synthesis Summary Report of 'ecal_cosmic_hls'
 ================================================================
 + General Information: 
-    * Date:           Fri Sep  6 16:14:44 2024
+    * Date:           Fri Sep  6 17:02:24 2024
     * Version:        2023.2 (Build 4023990 on Oct 11 2023)
     * Project:        SBS_ECAL_trigger
     * Solution:       crate1 (Vivado IP Flow Target)

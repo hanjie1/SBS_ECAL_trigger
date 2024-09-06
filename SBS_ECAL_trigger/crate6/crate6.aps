@@ -7,7 +7,7 @@
         <library value="xilinx/virtex7/virtex7" name="DefaultPlatform"/>
     </libraryList>
     <clockList>
-        <clock default="false" name="default" period="32"/>
+        <clock name="default" period="32" default="false"/>
     </clockList>
     <config>
         <config_rtl module_prefix="c6" reset="state"/>
