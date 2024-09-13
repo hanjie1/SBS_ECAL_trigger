@@ -1,0 +1,22 @@
+<AutoPilot:solution xmlns:AutoPilot="com.autoesl.autopilot.solution">
+    <name>
+        <value string="crate1"/>
+    </name>
+    <project>
+        <value string="SBS_ECAL_trigger_crate1"/>
+    </project>
+    <flowTarget value="vivado"/>
+    <targetInfo>
+        <TargetInfo value="xc7vx550t:-ffg1927:-1"/>
+    </targetInfo>
+    <libraryList>
+        <library value="xilinx/virtex7/virtex7" name="DefaultPlatform"/>
+    </libraryList>
+    <clockList>
+        <clock name="default" period="32" default="false"/>
+    </clockList>
+    <config>
+        <config_rtl module_prefix="c1" reset="state"/>
+    </config>
+</AutoPilot:solution>
+

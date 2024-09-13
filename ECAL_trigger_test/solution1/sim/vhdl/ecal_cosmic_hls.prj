@@ -1,0 +1,7 @@
+vhdl xil_defaultlib "AESL_sim_pkg.vhd"
+sv work "glbl.v"
+vhdl xil_defaultlib "ecal_cosmic_hls.autotb.vhd"
+vhdl xil_defaultlib "AESL_autofifo_s_fadc_hits_vxs.vhd"
+vhdl xil_defaultlib "AESL_autofifo_s_trigger_t.vhd"
+vhdl xil_defaultlib "ecal_cosmic_hls.vhd"
+

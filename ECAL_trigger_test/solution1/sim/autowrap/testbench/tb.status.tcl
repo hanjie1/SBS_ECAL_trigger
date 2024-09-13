@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName /daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/ECAL_trigger_test/solution1/./sim/autowrap/testbench/ecal_cosmic_hls.cpp_pre.cpp.tb.cpp

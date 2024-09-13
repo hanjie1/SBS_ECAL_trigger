@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# xsim v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Fri Sep 13 14:47:24 2024
+# Process ID: 362430
+# Current directory: /daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/ECAL_trigger_test/solution1/sim/vhdl
+# Command line: xsim -mode tcl -source {xsim.dir/ecal_cosmic_hls/xsim_script.tcl}
+# Log file: /daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/ECAL_trigger_test/solution1/sim/vhdl/xsim.log
+# Journal file: /daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/ECAL_trigger_test/solution1/sim/vhdl/xsim.jou
+# Running On: indra-s1, OS: Linux, CPU Frequency: 3284.729 MHz, CPU Physical cores: 24, Host memory: 201198 MB
+#-----------------------------------------------------------
+source xsim.dir/ecal_cosmic_hls/xsim_script.tcl
+source ecal_cosmic_hls.tcl
