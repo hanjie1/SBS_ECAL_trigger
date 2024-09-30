@@ -4,4 +4,4 @@ set depth_list {
   {s_fadc_hits_vxs 1}
   {s_trigger_t 1}
 }
-set trans_num 10
+set trans_num 12

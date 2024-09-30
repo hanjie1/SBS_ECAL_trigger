@@ -1059,8 +1059,8 @@ void apatb_ecal_cosmic_hls_hw(hls::sim::Byte<1>* __xlx_apatb_param_hit_width, hl
   };
   port1.param = __xlx_apatb_param_row_threshold;
 
-  static hls::sim::Stream<hls::sim::Byte<32>> port2 {
-    .width = 160,
+  static hls::sim::Stream<hls::sim::Byte<512>> port2 {
+    .width = 3456,
     .name = "s_fadc_hits_vxs",
 #ifdef POST_CHECK
     .reader = new hls::sim::Reader(WRAPC_STREAM_SIZE_IN_s_fadc_hits_vxs),
@@ -1070,7 +1070,7 @@ void apatb_ecal_cosmic_hls_hw(hls::sim::Byte<1>* __xlx_apatb_param_hit_width, hl
     .gwriter = new hls::sim::Writer(WRAPC_STREAM_INGRESS_STATUS_s_fadc_hits_vxs),
 #endif
   };
-  port2.param = (hls::stream<hls::sim::Byte<32>>*)__xlx_apatb_param_s_fadc_hits_vxs;
+  port2.param = (hls::stream<hls::sim::Byte<512>>*)__xlx_apatb_param_s_fadc_hits_vxs;
   port2.hasWrite = false;
 
   static hls::sim::Stream<hls::sim::Byte<1>> port3 {

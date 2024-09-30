@@ -8,4 +8,6 @@ transaction        5            1            1
 transaction        6            1            1
 transaction        7            1            1
 transaction        8            1            1
-transaction        9            1            -2147483648
+transaction        9            1            1
+transaction        10            1            1
+transaction        11            1            -2147483648

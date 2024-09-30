@@ -1,0 +1,17 @@
+#hit_width=3,row_threshold=3, frame, trigger in hex
+0 0
+1 10000000
+2 0
+#hit_width=3,row_threshold=4, frame, trigger in hex
+0 0
+1 0
+2 00000001
+#hit_width=3,row_threshold=1, frame, trigger in hex
+0 0
+1 01000010
+2 0
+#hit_width=4,row_threshold=1, frame, trigger in hex
+0 0
+1 00000010
+2 0
+

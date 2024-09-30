@@ -17,7 +17,7 @@ use std.textio.all;
 entity AESL_autofifo_s_fadc_hits_vxs is
   generic (
       constant    TV_IN       :   STRING (1 to 62) := "../tv/cdatafile/c.ecal_cosmic_hls.autotvin_s_fadc_hits_vxs.dat";
-      constant    DATA_WIDTH  :   INTEGER := 160;
+      constant    DATA_WIDTH  :   INTEGER := 3456;
       constant    ADDR_WIDTH  :   integer := 1;
       constant    DEPTH       :   integer := 1
   );
@@ -331,7 +331,7 @@ begin
       file        fp          :   TEXT;
       variable    fstatus     :   FILE_OPEN_STATUS;
       variable    token_line  :   LINE;
-      variable    token       :   STRING(1 to 344);
+      variable    token       :   STRING(1 to 6936);
       variable    token_len   :   INTEGER;
       variable    token_int	:   INTEGER;
       variable    transaction_idx :   INTEGER;

@@ -31,7 +31,7 @@ entity apatb_ecal_cosmic_hls_top is
       LENGTH_row_threshold     : INTEGER := 1;
       LENGTH_s_fadc_hits_vxs     : INTEGER := 1;
       LENGTH_s_trigger_t     : INTEGER := 1;
-	    AUTOTB_TRANSACTION_NUM    : INTEGER := 10
+	    AUTOTB_TRANSACTION_NUM    : INTEGER := 12
 );
 
 end apatb_ecal_cosmic_hls_top;
@@ -62,7 +62,7 @@ architecture behav of apatb_ecal_cosmic_hls_top is
   signal ap_done :  STD_LOGIC;
   signal ap_idle :  STD_LOGIC;
   signal ap_ready :  STD_LOGIC;
-  signal s_fadc_hits_vxs_dout :  STD_LOGIC_VECTOR (159 DOWNTO 0);
+  signal s_fadc_hits_vxs_dout :  STD_LOGIC_VECTOR (3455 DOWNTO 0);
   signal s_fadc_hits_vxs_empty_n :  STD_LOGIC;
   signal s_fadc_hits_vxs_read :  STD_LOGIC;
   signal s_trigger_t_din :  STD_LOGIC_VECTOR (7 DOWNTO 0);
@@ -104,7 +104,7 @@ port (
     ap_done :  OUT STD_LOGIC;
     ap_idle :  OUT STD_LOGIC;
     ap_ready :  OUT STD_LOGIC;
-    s_fadc_hits_vxs_dout :  IN STD_LOGIC_VECTOR (159 DOWNTO 0);
+    s_fadc_hits_vxs_dout :  IN STD_LOGIC_VECTOR (3455 DOWNTO 0);
     s_fadc_hits_vxs_empty_n :  IN STD_LOGIC;
     s_fadc_hits_vxs_read :  OUT STD_LOGIC;
     s_trigger_t_din :  OUT STD_LOGIC_VECTOR (7 DOWNTO 0);
@@ -119,11 +119,11 @@ shared variable AESL_REG_hit_width : STD_LOGIC_VECTOR(2 downto 0) := (others => 
 -- The signal of port row_threshold
 shared variable AESL_REG_row_threshold : STD_LOGIC_VECTOR(3 downto 0) := (others => '0');
 signal fifos_fadc_hits_vxs_rd : STD_LOGIC;
-signal fifos_fadc_hits_vxs_dout : STD_LOGIC_VECTOR(159 downto 0);
+signal fifos_fadc_hits_vxs_dout : STD_LOGIC_VECTOR(3455 downto 0);
 signal fifos_fadc_hits_vxs_empty_n : STD_LOGIC;
 signal reg_fifos_fadc_hits_vxs_empty_n : STD_LOGIC;
 signal fifos_fadc_hits_vxs_wr : STD_LOGIC;
-signal fifos_fadc_hits_vxs_din : STD_LOGIC_VECTOR(159 downto 0);
+signal fifos_fadc_hits_vxs_din : STD_LOGIC_VECTOR(3455 downto 0);
 signal fifos_fadc_hits_vxs_full_n : STD_LOGIC;
 signal reg_fifos_fadc_hits_vxs_full_n : STD_LOGIC;
 signal ap_c_n_tvin_trans_num_s_fadc_hits_vxs : STD_LOGIC_VECTOR(31 DOWNTO 0) := conv_std_logic_vector(1, 32);
@@ -559,7 +559,7 @@ read_file_process_hit_width : process
   file        fp          :   TEXT;
   variable    fstatus     :   FILE_OPEN_STATUS;
   variable    token_line  :   LINE;
-  variable    token       :   STRING(1 to 344);
+  variable    token       :   STRING(1 to 6936);
   variable    i           :   INTEGER;
   variable    transaction_finish  :   INTEGER;
   variable    transaction_idx     :   INTEGER:= 0;
@@ -609,7 +609,7 @@ read_file_process_row_threshold : process
   file        fp          :   TEXT;
   variable    fstatus     :   FILE_OPEN_STATUS;
   variable    token_line  :   LINE;
-  variable    token       :   STRING(1 to 344);
+  variable    token       :   STRING(1 to 6936);
   variable    i           :   INTEGER;
   variable    transaction_finish  :   INTEGER;
   variable    transaction_idx     :   INTEGER:= 0;
@@ -931,7 +931,7 @@ file        fp          :   TEXT;
 variable    fstatus     :   FILE_OPEN_STATUS;
 variable    i           :   INTEGER;
 variable    token_line  :   LINE;
-variable    token       :   STRING(1 to 344);
+variable    token       :   STRING(1 to 6936);
 begin
     file_open(fstatus, fp,"../tv/stream_size/stream_size_in_s_fadc_hits_vxs.dat" , READ_MODE);
     if(fstatus /= OPEN_OK) then

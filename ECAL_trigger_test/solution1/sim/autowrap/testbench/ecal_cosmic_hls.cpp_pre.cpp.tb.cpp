@@ -81678,7 +81678,7 @@ typedef struct{
 # 86 "/daqfs/home/hanjie/Desktop/GEp/SBS_ECAL_trigger/ecal_cosmic_hls.h"
 typedef struct
 {
-  hit_t vxs_ch[10];
+  hit_t vxs_ch[216];
 } fadc_hits_vxs;
 
 typedef struct
@@ -81715,7 +81715,7 @@ void ecal_cosmic_hls(
 #pragma HLS PIPELINE II=1 style=flp
 
   fadc_hits_vxs fadc_hits = s_fadc_hits_vxs.read();
-  static TYPE_LONGT fadc_hits_stream[10]={0};
+  static TYPE_LONGT fadc_hits_stream[216]={0};
 
 
 
@@ -81723,7 +81723,7 @@ void ecal_cosmic_hls(
 
   int ch=0;
   int dt=0;
-  for(ch=0; ch<10; ch++){
+  for(ch=0; ch<216; ch++){
      TYPE_T tt = fadc_hits.vxs_ch[ch].t;
      ap_uint<1> first = !fadc_hits_stream[ch][tt];
      for(dt=0; dt<8; dt++){
@@ -81736,7 +81736,7 @@ void ecal_cosmic_hls(
 
   TYPE_TRIG row_or_hits[12] = {0};
   for(dt=0; dt<8; dt++){
-     for(ch=0; ch<10; ch++){
+     for(ch=0; ch<216; ch++){
       TYPE_ROW tmp_row = detmap[ch].row;
       row_or_hits[tmp_row-1][dt] |= fadc_hits_stream[ch][dt];
 
@@ -81778,7 +81778,7 @@ void ecal_cosmic_hls(
 
   lastT = multi_row_trig[7];
 
-  for(ch=0; ch<10; ch++)
+  for(ch=0; ch<216; ch++)
       fadc_hits_stream[ch] = fadc_hits_stream[ch]>>8;
 
   return;

@@ -4,10 +4,8 @@
 #include <ap_int.h>
 #include <hls_stream.h>
 
-#define CRATE1
-
 #ifdef CRATE1
-#define NFADCCHAN 10
+#define NFADCCHAN 216
 #define NDETCHAN 216
 #define NCOL 21
 #define NROW 12

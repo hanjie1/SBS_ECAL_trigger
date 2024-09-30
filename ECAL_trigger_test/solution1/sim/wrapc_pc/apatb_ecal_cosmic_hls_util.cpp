@@ -16,29 +16,29 @@ extern "C" bool fpga_fifo_not_empty_1(hls::stream<__cosim_T_1__>* fifo) {
 extern "C" bool fpga_fifo_exist_1(hls::stream<__cosim_T_1__>* fifo) {
   return fifo->exist();
 }
-struct __cosim_T_32__ {char data[32];};
-extern "C" void fpga_fifo_push_32(__cosim_T_32__* val, hls::stream<__cosim_T_32__>* fifo) {
+struct __cosim_T_512__ {char data[512];};
+extern "C" void fpga_fifo_push_512(__cosim_T_512__* val, hls::stream<__cosim_T_512__>* fifo) {
   fifo->write(*val);
 }
-extern "C" void fpga_fifo_pop_32(__cosim_T_32__* val, hls::stream<__cosim_T_32__>* fifo) {
+extern "C" void fpga_fifo_pop_512(__cosim_T_512__* val, hls::stream<__cosim_T_512__>* fifo) {
   *val = fifo->read();
 }
-extern "C" bool fpga_fifo_not_empty_32(hls::stream<__cosim_T_32__>* fifo) {
+extern "C" bool fpga_fifo_not_empty_512(hls::stream<__cosim_T_512__>* fifo) {
   return !fifo->empty();
 }
-extern "C" bool fpga_fifo_exist_32(hls::stream<__cosim_T_32__>* fifo) {
+extern "C" bool fpga_fifo_exist_512(hls::stream<__cosim_T_512__>* fifo) {
   return fifo->exist();
 }
-struct __cosim_T_40__ {char data[40];};
-extern "C" void fpga_fifo_push_40(__cosim_T_40__* val, hls::stream<__cosim_T_40__>* fifo) {
+struct __cosim_T_864__ {char data[864];};
+extern "C" void fpga_fifo_push_864(__cosim_T_864__* val, hls::stream<__cosim_T_864__>* fifo) {
   fifo->write(*val);
 }
-extern "C" void fpga_fifo_pop_40(__cosim_T_40__* val, hls::stream<__cosim_T_40__>* fifo) {
+extern "C" void fpga_fifo_pop_864(__cosim_T_864__* val, hls::stream<__cosim_T_864__>* fifo) {
   *val = fifo->read();
 }
-extern "C" bool fpga_fifo_not_empty_40(hls::stream<__cosim_T_40__>* fifo) {
+extern "C" bool fpga_fifo_not_empty_864(hls::stream<__cosim_T_864__>* fifo) {
   return !fifo->empty();
 }
-extern "C" bool fpga_fifo_exist_40(hls::stream<__cosim_T_40__>* fifo) {
+extern "C" bool fpga_fifo_exist_864(hls::stream<__cosim_T_864__>* fifo) {
   return fifo->exist();
 }

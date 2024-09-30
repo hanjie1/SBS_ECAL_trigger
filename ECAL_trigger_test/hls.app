@@ -1,4 +1,4 @@
-<project xmlns="com.autoesl.autopilot.project" top="ecal_cosmic_hls" name="ECAL_trigger_test" projectType="C/C++">
+<project xmlns="com.autoesl.autopilot.project" name="ECAL_trigger_test" top="ecal_cosmic_hls" projectType="C/C++">
     <includePaths/>
     <libraryPaths/>
     <Simulation>

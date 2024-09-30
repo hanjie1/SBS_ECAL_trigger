@@ -1,41 +1,49 @@
 [[[runtime]]]
 [[transaction]]           0
-10
-9
-[[/transaction]]
-[[transaction]]           1
-9
-8
-[[/transaction]]
-[[transaction]]           2
-8
-7
-[[/transaction]]
-[[transaction]]           3
-7
-6
-[[/transaction]]
-[[transaction]]           4
-6
-5
-[[/transaction]]
-[[transaction]]           5
-5
-4
-[[/transaction]]
-[[transaction]]           6
-4
-3
-[[/transaction]]
-[[transaction]]           7
 3
 2
 [[/transaction]]
-[[transaction]]           8
+[[transaction]]           1
 2
 1
 [[/transaction]]
+[[transaction]]           2
+1
+0
+[[/transaction]]
+[[transaction]]           3
+3
+2
+[[/transaction]]
+[[transaction]]           4
+2
+1
+[[/transaction]]
+[[transaction]]           5
+1
+0
+[[/transaction]]
+[[transaction]]           6
+3
+2
+[[/transaction]]
+[[transaction]]           7
+2
+1
+[[/transaction]]
+[[transaction]]           8
+1
+0
+[[/transaction]]
 [[transaction]]           9
+3
+2
+[[/transaction]]
+[[transaction]]           10
+2
+1
+[[/transaction]]
+[[transaction]]           11
 1
 0
 [[/transaction]]
