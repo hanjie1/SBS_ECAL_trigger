@@ -8,7 +8,7 @@ def find_cell(row, col):
        return -1
     
     cellid = df_cell[(df_cell['row']==row)&(df_cell['column']==col)]['cell'].iloc[0]
-    return cellid
+    return cellid.item()
 
 tot_crate=7
 # total number of super modules for each crate per row
@@ -28,7 +28,7 @@ for ncrate in range(tot_crate):
    
         for icol in range(startcol,imaxcol):
             # 3x5 cluster around (irow, icol)
-            c0_cell = df_cell[(df_cell['row']==(irow+startrow))&(df_cell['column']==icol)]['cell'].iloc[0]
+            c0_cell = df_cell[(df_cell['row']==(irow+startrow))&(df_cell['column']==icol)]['cell'].iloc[0].item()
             c1_irow = irow+startrow-2
             c1_icol = icol-1
             c1_cell = find_cell(c1_irow,c1_icol)
@@ -87,7 +87,7 @@ for ncrate in range(tot_crate):
 
             dic['row'].append(irow+startrow)
             dic['col'].append(icol)
-            tmp_list = np.array([c0_cell,c1_cell,c2_cell,c3_cell,c4_cell,c5_cell,c6_cell,c7_cell,c9_cell,c10_cell,c11_cell,c12_cell,c13_cell,c14_cell])
+            tmp_list = (c0_cell,c1_cell,c2_cell,c3_cell,c4_cell,c5_cell,c6_cell,c7_cell,c8_cell,c9_cell,c10_cell,c11_cell,c12_cell,c13_cell,c14_cell)
             dic['cluster_cell_list'].append(tmp_list)
 
     startrow=startrow+maxrow[ncrate]

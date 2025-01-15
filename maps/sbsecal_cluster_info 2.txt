@@ -1,0 +1,55 @@
+type sbsecal_cell is record
+  -- block id 
+  row       : integer;
+  col       : integer;
+
+  -- block crate/slot/ch fadc info and which bin number (0 to 62) to be used in the trigger
+  -- rx_rocid: which crate this information is valid for, SBS_ECALVTP#_ROCID, or -1 if not used
+  rocid     : integer;
+  slot      : integer;
+  ch        : integer;
+  bin       : integer;
+
+  -- which fiber/channel to send block if on perimeter (2 deep)
+  -- tx_fiber: 1,2,3,4 or -1 if not a perimeter block
+  -- tx_ch: 0 to 31 or -1 if not a perimeter block
+  tx_fiber  : integer;
+  tx_ch     : integer;
+
+  -- which fiber/channel to receive block if on perimeter (2 deep)
+  -- rx_rocid: which crate this information is valid for, SBS_ECALVTP#_ROCID, or -1 if not used
+  -- rx_fiber: 1,2,3,4 or -1 if not a perimeter block
+  -- rx_ch: 0 to 31 or -1 if not a perimeter block
+  rx_rocid  : integer;
+  rx_fiber  : integer;
+  rx_ch     : integer;
+end record;
+
+type sbsecal_block_array is array(natural range <>) of sbsecal_block;
+
+constant SBSECAL_CELL_N    : integer := 1656;
+constant SBSECAL_CELL_INFO : sbsecal_block_array(0 to SBSECAL_CELL_N-1) := (
+--                             T       R   R
+--                             X       X   X
+--             R               F       C   F
+--             O   S           I   T   R   I   R
+--     R   C   C   L       B   B   X   A   B   X
+--     O   O   I   O   C   I   E   C   T   E   C
+--     W   L   D   T   H   N   R   H   E   R   H
+--------------------------------------------------
+    (  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0),  -- cell0
+    (  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0),  -- cell1
+...
+    (  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0)   -- cell1655
+  );
+
+type cluster_cell_list_t is array(natural range <>) of integer_vector(0 to 14);
+
+constant SBSECAL1_CLUSTER_N         : integer := 0;
+constant SBSECAL1_CLUSTER_BLOCK_MAP : cluster_cell_list_t(0 to SBSECAL1_CLUSTER_N-1) := (
+    --a list where each line has 15 integers referring to the cell number in above global table that form a cluster.
+    --first number in array of each line shall be the center of the cluster and must reside in the local crate
+    (0,0,0,0,0,0,0,0,0,0,0,0,0,0,0),
+    ...
+  );
+

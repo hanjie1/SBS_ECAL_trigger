@@ -88,7 +88,7 @@ df_bin=pd.DataFrame(bin_dic)
 ##################################################################
 fiber_dic_tmp={'cell':[],'txfiber':[],'txch':[],'rxrocid':[],'rxfiber':[],'rxch':[]}
 tmp_list=[-1]*len(cell_list)
-fiber_dic={'cell':cell_list,'txfiber':tmp_list,'txch':tmp_list,'rxrocid':['None']*len(cell_list),'rxfiber':tmp_list,'rxch':tmp_list}
+fiber_dic={'cell':cell_list,'txfiber':tmp_list,'txch':tmp_list,'rxrocid':['-1']*len(cell_list),'rxfiber':tmp_list,'rxch':tmp_list}
 
 startrow=0
 for ncrate in range(tot_crate):
