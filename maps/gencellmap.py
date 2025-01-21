@@ -8,7 +8,7 @@ crate_name=["SBS_ECALVTP1_ROCID","SBS_ECALVTP2_ROCID","SBS_ECALVTP3_ROCID","SBS_
 # total number of super modules for each crate per row
 nsmo_crate=[ [4,6,7,7],[8,8,9],[9,9,9],[9,9,9],[9,9,9],[9,9,8],[8,7,7,6] ]
 # starting offset for the super module row
-col_offset=[ [0,1,0,1],[0,2,2],[2,2,2],[2,2,2],[2,2,2],[2,2,2],[0,1,0,1] ]
+col_offset=[ [0,1,0,1],[0,1,1],[1,1,1],[1,1,1],[1,1,1],[1,1,1],[0,1,0,1] ]
 slot_num=[3,4,5,6,7,8,9,10,13,14,15,16,17,18,19,20]
 
 #################################################################### 
@@ -62,17 +62,37 @@ for ncrate in range(tot_crate):
     lastrow=0
     bin_offset=0
     maxbin_per_row=[]
- 
+
+##binning method when assuming the ECAL is rectangular
+#    for irow in range(maxrow[ncrate]):
+#        startcol=col_offset[ncrate][irow//3]
+#        imaxcol=nsmo_crate[ncrate][irow//3]*3+startcol
+#        # 3x3 binning
+#        if irow//3 != lastrow//3:
+#           bin_offset=max(maxbin_per_row)+1
+#           maxbin_per_row.clear()
+#         
+#        for icol in range(startcol,imaxcol):
+#            ibin=icol//3 + bin_offset # 3x3 binning
+#            icell=df_gen[(df_gen['row']==(irow+startrow))&(df_gen['column']==icol)]['cell'].iloc[0]
+#            bin_dic['cell'].append(icell)
+#            bin_dic['bin'].append(ibin)
+#
+#        maxbin_per_row.append(ibin)
+#        lastrow=irow
+#    startrow=startrow+maxrow[ncrate]
+
+# binning method when using the super module group
     for irow in range(maxrow[ncrate]):
         startcol=col_offset[ncrate][irow//3]
         imaxcol=nsmo_crate[ncrate][irow//3]*3+startcol
-        # 3x3 binning
+       
         if irow//3 != lastrow//3:
            bin_offset=max(maxbin_per_row)+1
            maxbin_per_row.clear()
          
         for icol in range(startcol,imaxcol):
-            ibin=icol//3 + bin_offset # 3x3 binning
+            ibin=(icol - startcol)//3 + bin_offset # 3x3 binning
             icell=df_gen[(df_gen['row']==(irow+startrow))&(df_gen['column']==icol)]['cell'].iloc[0]
             bin_dic['cell'].append(icell)
             bin_dic['bin'].append(ibin)
